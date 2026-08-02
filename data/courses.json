@@ -1,0 +1,238 @@
+[
+  {
+    "id": "cs_mode-analytics-sql-tutorial",
+    "title": "Mode Analytics SQL Tutorial",
+    "provider": "Mode",
+    "url": "https://mode.com/sql-tutorial/",
+    "status": "in-progress",
+    "hours": 12,
+    "hoursCompleted": 7,
+    "progress": 58,
+    "difficulty": 3,
+    "importance": "critical",
+    "roi": 10,
+    "hasCertificate": false,
+    "projects": [
+      "Rebuild the retention query from scratch",
+      "Window-function drill set"
+    ],
+    "notes": "The advanced module (window functions) is the part that shows up in interviews. Do it twice.",
+    "skillIds": [
+      "sk_analytics"
+    ],
+    "startedAt": "2026-07-03",
+    "xp": 320,
+    "order": 0
+  },
+  {
+    "id": "cs_sqlbolt",
+    "title": "SQLBolt",
+    "provider": "SQLBolt",
+    "url": "https://sqlbolt.com",
+    "status": "done",
+    "hours": 6,
+    "hoursCompleted": 6,
+    "progress": 100,
+    "difficulty": 2,
+    "importance": "critical",
+    "roi": 9,
+    "hasCertificate": false,
+    "projects": [
+      "All 18 lessons completed without hints"
+    ],
+    "notes": "Fastest possible on-ramp. Finished in week one — the right first move.",
+    "skillIds": [
+      "sk_analytics"
+    ],
+    "startedAt": "2026-07-03",
+    "completedAt": "2026-07-09",
+    "xp": 240,
+    "order": 1
+  },
+  {
+    "id": "cs_amplitude-academy-product-analytics",
+    "title": "Amplitude Academy — Product Analytics",
+    "provider": "Amplitude",
+    "url": "https://academy.amplitude.com",
+    "status": "not-started",
+    "hours": 10,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 2,
+    "importance": "critical",
+    "roi": 9,
+    "hasCertificate": true,
+    "projects": [
+      "Funnel, retention and cohort analyses on a public dataset"
+    ],
+    "notes": "Month 2. The certificate is worth little; the tool fluency is worth a great deal.",
+    "skillIds": [
+      "sk_analytics",
+      "sk_metrics"
+    ],
+    "xp": 280,
+    "order": 2
+  },
+  {
+    "id": "cs_mixpanel-product-analytics-certification",
+    "title": "Mixpanel Product Analytics Certification",
+    "provider": "Mixpanel",
+    "url": "https://mixpanel.com/blog/product-analytics-certification/",
+    "status": "not-started",
+    "hours": 8,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 2,
+    "importance": "high",
+    "roi": 7,
+    "hasCertificate": true,
+    "projects": [
+      "Rebuild the Amplitude analyses in Mixpanel and compare"
+    ],
+    "notes": "Second tool, deliberately. Knowing where two tools disagree is the interesting part.",
+    "skillIds": [
+      "sk_analytics"
+    ],
+    "xp": 220,
+    "order": 3
+  },
+  {
+    "id": "cs_experimentation-for-product-managers",
+    "title": "Experimentation for Product Managers",
+    "provider": "Reforge / Statsig course",
+    "status": "not-started",
+    "hours": 16,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 4,
+    "importance": "critical",
+    "roi": 9,
+    "hasCertificate": true,
+    "projects": [
+      "Ten A/B test plans",
+      "One real experiment shipped and analysed"
+    ],
+    "notes": "Month 3. Pair with Kohavi — the course gives the workflow, the book gives the statistics.",
+    "skillIds": [
+      "sk_experimentation",
+      "sk_metrics"
+    ],
+    "xp": 340,
+    "order": 4
+  },
+  {
+    "id": "cs_google-data-analytics-professional-certificate",
+    "title": "Google Data Analytics Professional Certificate",
+    "provider": "Coursera / Google",
+    "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "status": "not-started",
+    "hours": 120,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 3,
+    "importance": "medium",
+    "roi": 4,
+    "hasCertificate": true,
+    "projects": [
+      "Capstone analysis"
+    ],
+    "notes": "Low ROI per hour, and the audit explicitly warns against collecting certificates without demonstrable application. Only worth it if you convert every module into a public artefact. Deprioritised on purpose.",
+    "skillIds": [
+      "sk_analytics"
+    ],
+    "xp": 1280,
+    "order": 5
+  },
+  {
+    "id": "cs_building-llm-applications",
+    "title": "Building LLM Applications",
+    "provider": "DeepLearning.AI",
+    "url": "https://www.deeplearning.ai",
+    "status": "not-started",
+    "hours": 14,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 4,
+    "importance": "high",
+    "roi": 8,
+    "hasCertificate": true,
+    "projects": [
+      "The Month 5 AI prototype"
+    ],
+    "notes": "Month 5. Focus on the evaluation and retrieval modules; skip the framework-specific parts.",
+    "skillIds": [
+      "sk_ai-product-knowledge",
+      "sk_technical-depth"
+    ],
+    "xp": 300,
+    "order": 6
+  },
+  {
+    "id": "cs_system-design-for-product-managers",
+    "title": "System Design for Product Managers",
+    "provider": "Educative",
+    "status": "not-started",
+    "hours": 18,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 4,
+    "importance": "high",
+    "roi": 7,
+    "hasCertificate": false,
+    "projects": [
+      "Two architecture-focused product documents"
+    ],
+    "notes": "Month 8. Read alongside DDIA chapters 1–6.",
+    "skillIds": [
+      "sk_technical-depth",
+      "sk_systems-thinking"
+    ],
+    "xp": 320,
+    "order": 7
+  },
+  {
+    "id": "cs_financial-modeling-for-saas",
+    "title": "Financial Modeling for SaaS",
+    "provider": "Wall Street Prep / equivalent",
+    "status": "not-started",
+    "hours": 12,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 4,
+    "importance": "medium",
+    "roi": 6,
+    "hasCertificate": false,
+    "projects": [
+      "One working SaaS model: MRR, churn, CAC, LTV, payback"
+    ],
+    "notes": "Month 9. Build the model as you go; a course without the spreadsheet is wasted.",
+    "skillIds": [
+      "sk_business-thinking"
+    ],
+    "xp": 240,
+    "order": 8
+  },
+  {
+    "id": "cs_reforge-product-strategy",
+    "title": "Reforge — Product Strategy",
+    "provider": "Reforge",
+    "status": "not-started",
+    "hours": 20,
+    "hoursCompleted": 0,
+    "progress": 0,
+    "difficulty": 4,
+    "importance": "high",
+    "roi": 7,
+    "hasCertificate": false,
+    "projects": [
+      "The strategy memo"
+    ],
+    "notes": "Expensive. Worth it only if you produce the memo alongside it.",
+    "skillIds": [
+      "sk_product-strategy",
+      "sk_business-thinking"
+    ],
+    "xp": 340,
+    "order": 9
+  }
+]

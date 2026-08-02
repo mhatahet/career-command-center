@@ -1,0 +1,303 @@
+{
+  "contacts": [
+    {
+      "id": "ct_layla-haddad",
+      "name": "Layla Haddad",
+      "company": "monday.com",
+      "role": "Group Product Manager",
+      "kind": "pm-leader",
+      "status": "in-conversation",
+      "relationshipStrength": 4,
+      "nextAction": "Send the analytics case study when it publishes; she offered to review it.",
+      "nextActionDate": "2026-07-28",
+      "lastContact": "2026-07-18",
+      "touchpoints": [
+        {
+          "id": "ct_layla-haddad_tp1",
+          "date": "2026-07-18",
+          "kind": "call",
+          "note": "Real conversation. Established what they care about and what I could offer."
+        }
+      ],
+      "couldRefer": true,
+      "targetCompanyTier": 2,
+      "notes": "Met through a Jordanian PM community. Genuinely helpful, fast replier. The single warmest lead on the list."
+    },
+    {
+      "id": "ct_daniel-r-os",
+      "name": "Daniel Ríos",
+      "company": "GitLab",
+      "role": "Senior Product Manager",
+      "kind": "pm-leader",
+      "status": "reached-out",
+      "relationshipStrength": 3,
+      "nextAction": "Follow up on the handbook question — he suggested a 30-minute call.",
+      "nextActionDate": "2026-07-21",
+      "lastContact": "2026-07-11",
+      "touchpoints": [
+        {
+          "id": "ct_daniel-r-os_tp1",
+          "date": "2026-07-11",
+          "kind": "message",
+          "note": "Personalised connection request with a specific reference to their work."
+        }
+      ],
+      "couldRefer": true,
+      "targetCompanyTier": 2,
+      "notes": "All-remote experience and very open about GitLab's hiring loop. Ask about the async-writing assessment."
+    },
+    {
+      "id": "ct_priya-raman",
+      "name": "Priya Raman",
+      "company": "Atlassian",
+      "role": "Principal Product Manager",
+      "kind": "pm-leader",
+      "status": "reached-out",
+      "relationshipStrength": 2,
+      "nextAction": "Comment thoughtfully on her posts for a month before asking for anything.",
+      "nextActionDate": "2026-07-18",
+      "lastContact": "2026-07-08",
+      "touchpoints": [
+        {
+          "id": "ct_priya-raman_tp1",
+          "date": "2026-07-08",
+          "kind": "message",
+          "note": "Personalised connection request with a specific reference to their work."
+        }
+      ],
+      "couldRefer": false,
+      "targetCompanyTier": 1,
+      "notes": "Writes about permissions architecture. Highest-value potential referral in Tier 1 — do not rush it."
+    },
+    {
+      "id": "ct_marcus-webb",
+      "name": "Marcus Webb",
+      "company": "Independent",
+      "role": "Technical Recruiter (B2B SaaS)",
+      "kind": "recruiter",
+      "status": "in-conversation",
+      "relationshipStrength": 3,
+      "nextAction": "Send the updated resume once the quantified bullets are done.",
+      "nextActionDate": "2026-07-25",
+      "lastContact": "2026-07-15",
+      "touchpoints": [
+        {
+          "id": "ct_marcus-webb_tp1",
+          "date": "2026-07-15",
+          "kind": "call",
+          "note": "Real conversation. Established what they care about and what I could offer."
+        }
+      ],
+      "couldRefer": true,
+      "targetCompanyTier": 2,
+      "notes": "Places senior PMs into European remote roles. Blunt, useful feedback on positioning."
+    },
+    {
+      "id": "ct_sofia-almeida",
+      "name": "Sofia Almeida",
+      "company": "Intercom",
+      "role": "Product Lead, AI",
+      "kind": "pm-leader",
+      "status": "to-reach-out",
+      "relationshipStrength": 1,
+      "nextAction": "Reach out after the month-5 AI prototype exists — approach with the artefact, not the ask.",
+      "nextActionDate": "2026-08-04",
+      "touchpoints": [],
+      "couldRefer": false,
+      "targetCompanyTier": 2,
+      "notes": "AI product evaluation is her specialty. Do not contact until you have something to show."
+    },
+    {
+      "id": "ct_ahmad-nasser",
+      "name": "Ahmad Nasser",
+      "company": "Zapier",
+      "role": "Product Manager",
+      "kind": "peer",
+      "status": "warm",
+      "relationshipStrength": 4,
+      "nextAction": "Set up the fortnightly mock interview rotation.",
+      "nextActionDate": "2026-08-01",
+      "lastContact": "2026-07-22",
+      "touchpoints": [
+        {
+          "id": "ct_ahmad-nasser_tp1",
+          "date": "2026-07-22",
+          "kind": "call",
+          "note": "Real conversation. Established what they care about and what I could offer."
+        }
+      ],
+      "couldRefer": true,
+      "targetCompanyTier": 3,
+      "notes": "Agreed to be a regular mock partner. Strong on execution rounds."
+    },
+    {
+      "id": "ct_elena-kova",
+      "name": "Elena Kovač",
+      "company": "Datadog",
+      "role": "Director of Product",
+      "kind": "hiring-manager",
+      "status": "to-reach-out",
+      "relationshipStrength": 1,
+      "nextAction": "Needs a warm introduction — ask Layla whether she knows anyone in common.",
+      "nextActionDate": "2026-08-04",
+      "touchpoints": [],
+      "couldRefer": false,
+      "targetCompanyTier": 2,
+      "notes": "Runs a team squarely in your domain. Cold outreach would be wasted; find the path in."
+    },
+    {
+      "id": "ct_james-okonkwo",
+      "name": "James Okonkwo",
+      "company": "Former colleague",
+      "role": "Engineering Manager",
+      "kind": "mentor",
+      "status": "warm",
+      "relationshipStrength": 5,
+      "nextAction": "Ask him to review both architecture documents in month 8.",
+      "nextActionDate": "2026-08-04",
+      "lastContact": "2026-07-25",
+      "touchpoints": [
+        {
+          "id": "ct_james-okonkwo_tp1",
+          "date": "2026-07-25",
+          "kind": "call",
+          "note": "Real conversation. Established what they care about and what I could offer."
+        }
+      ],
+      "couldRefer": false,
+      "notes": "Will give honest technical critique. Use him as the quality gate on technical artefacts."
+    },
+    {
+      "id": "ct_nadia-farouk",
+      "name": "Nadia Farouk",
+      "company": "Okta",
+      "role": "Senior Product Manager",
+      "kind": "pm-leader",
+      "status": "to-reach-out",
+      "relationshipStrength": 1,
+      "nextAction": "Connect after publishing the permissions case study — that artefact is the introduction.",
+      "nextActionDate": "2026-08-04",
+      "touchpoints": [],
+      "couldRefer": false,
+      "targetCompanyTier": 2,
+      "notes": "Identity and permissions. The single most relevant person on this list to your actual expertise."
+    },
+    {
+      "id": "ct_tom-bergstr-m",
+      "name": "Tom Bergström",
+      "company": "Independent",
+      "role": "PM Career Coach",
+      "kind": "mentor",
+      "status": "reached-out",
+      "relationshipStrength": 2,
+      "nextAction": "Book the first session for after the month-3 milestone.",
+      "nextActionDate": "2026-07-20",
+      "lastContact": "2026-07-10",
+      "touchpoints": [
+        {
+          "id": "ct_tom-bergstr-m_tp1",
+          "date": "2026-07-10",
+          "kind": "message",
+          "note": "Personalised connection request with a specific reference to their work."
+        }
+      ],
+      "couldRefer": false,
+      "notes": "Specialises in international transitions from smaller markets. Worth paying for."
+    },
+    {
+      "id": "ct_grace-liu",
+      "name": "Grace Liu",
+      "company": "Miro",
+      "role": "Product Manager, Platform",
+      "kind": "pm-leader",
+      "status": "to-reach-out",
+      "relationshipStrength": 1,
+      "nextAction": "Comment on her extensibility posts first; approach in month 7 with the teardown.",
+      "nextActionDate": "2026-08-04",
+      "touchpoints": [],
+      "couldRefer": false,
+      "targetCompanyTier": 1,
+      "notes": "Platform and extensibility — the direct overlap with your systems thinking."
+    },
+    {
+      "id": "ct_omar-khalil",
+      "name": "Omar Khalil",
+      "company": "Local SaaS startup",
+      "role": "VP Product",
+      "kind": "mentor",
+      "status": "warm",
+      "relationshipStrength": 4,
+      "nextAction": "Monthly catch-up. Ask him to pressure-test the strategy memo in month 9.",
+      "nextActionDate": "2026-07-29",
+      "lastContact": "2026-07-19",
+      "touchpoints": [
+        {
+          "id": "ct_omar-khalil_tp1",
+          "date": "2026-07-19",
+          "kind": "call",
+          "note": "Real conversation. Established what they care about and what I could offer."
+        }
+      ],
+      "couldRefer": true,
+      "targetCompanyTier": 3,
+      "notes": "Knows your work. Best source of a credible reference and of blunt feedback."
+    }
+  ],
+  "events": [
+    {
+      "id": "ev_mind-the-product-global",
+      "name": "Mind the Product Global",
+      "kind": "conference",
+      "date": "2026-09-15",
+      "location": "Remote / London",
+      "status": "considering",
+      "goal": "Meet three PMs from Tier 2 companies and have one substantive conversation about their hiring loop.",
+      "outcomes": "Strong speaker list. Worth attending remotely at minimum.",
+      "contactsMade": 0
+    },
+    {
+      "id": "ev_productcon",
+      "name": "ProductCon",
+      "kind": "conference",
+      "date": "2026-11-15",
+      "location": "Remote",
+      "status": "considering",
+      "goal": "Two connections in AI product roles.",
+      "outcomes": "Free remote tier. Low cost, moderate value.",
+      "contactsMade": 0
+    },
+    {
+      "id": "ev_local-pm-meetup-amman",
+      "name": "Local PM Meetup — Amman",
+      "kind": "meetup",
+      "date": "2026-07-15",
+      "location": "Amman",
+      "status": "registered",
+      "goal": "Present the metric-tree framework. Speaking is worth more than attending.",
+      "outcomes": "Speaking slot available. Take it — presenting builds the brand faster than networking does.",
+      "contactsMade": 0
+    },
+    {
+      "id": "ev_reforge-summit",
+      "name": "Reforge Summit",
+      "kind": "conference",
+      "date": "2027-02-15",
+      "location": "Remote",
+      "status": "considering",
+      "goal": "Growth and PLG content — both on the should-improve list.",
+      "outcomes": "Assess against cost.",
+      "contactsMade": 0
+    },
+    {
+      "id": "ev_enterprise-ux-conference",
+      "name": "Enterprise UX Conference",
+      "kind": "conference",
+      "date": "2027-05-15",
+      "location": "Remote / Amsterdam",
+      "status": "considering",
+      "goal": "Your domain. Aim for a speaking submission rather than a ticket.",
+      "outcomes": "Submit a talk on the workflow redesign once the case study is published.",
+      "contactsMade": 0
+    }
+  ]
+}

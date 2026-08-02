@@ -1,0 +1,489 @@
+{
+  "activity": [
+    {
+      "date": "2026-07-01",
+      "hours": 2.4,
+      "xp": 158,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 1.68,
+        "sk_metrics": 0.48,
+        "sk_business-thinking": 0.24
+      },
+      "byArea": {
+        "sql": 1.68,
+        "reading": 0.48,
+        "admin": 0.24
+      },
+      "note": "Day one. SQLBolt lessons 1–6 in a single sitting."
+    },
+    {
+      "date": "2026-07-02",
+      "hours": 2,
+      "xp": 140,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 1.4,
+        "sk_metrics": 0.4,
+        "sk_business-thinking": 0.2
+      },
+      "byArea": {
+        "sql": 1.4,
+        "reading": 0.4,
+        "admin": 0.2
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "hours": 1.9,
+      "xp": 136,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 1.33,
+        "sk_metrics": 0.38,
+        "sk_business-thinking": 0.19
+      },
+      "byArea": {
+        "sql": 1.33,
+        "reading": 0.38,
+        "admin": 0.19
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "hours": 1.9,
+      "xp": 136,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 1.33,
+        "sk_metrics": 0.38,
+        "sk_business-thinking": 0.19
+      },
+      "byArea": {
+        "sql": 1.33,
+        "reading": 0.38,
+        "admin": 0.19
+      }
+    },
+    {
+      "date": "2026-07-05",
+      "hours": 2.9,
+      "xp": 206,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 2.03,
+        "sk_metrics": 0.58,
+        "sk_business-thinking": 0.29
+      },
+      "byArea": {
+        "sql": 2.03,
+        "reading": 0.58,
+        "admin": 0.29
+      }
+    },
+    {
+      "date": "2026-07-08",
+      "hours": 2.9,
+      "xp": 206,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 2.03,
+        "sk_metrics": 0.58,
+        "sk_business-thinking": 0.29
+      },
+      "byArea": {
+        "sql": 2.03,
+        "reading": 0.58,
+        "admin": 0.29
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "hours": 3.3,
+      "xp": 224,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 2.31,
+        "sk_metrics": 0.66,
+        "sk_business-thinking": 0.33
+      },
+      "byArea": {
+        "sql": 2.31,
+        "reading": 0.66,
+        "admin": 0.33
+      }
+    },
+    {
+      "date": "2026-07-10",
+      "hours": 1.9,
+      "xp": 136,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 1.33,
+        "sk_metrics": 0.38,
+        "sk_business-thinking": 0.19
+      },
+      "byArea": {
+        "sql": 1.33,
+        "reading": 0.38,
+        "admin": 0.19
+      }
+    },
+    {
+      "date": "2026-07-11",
+      "hours": 2.6,
+      "xp": 192,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 1.82,
+        "sk_metrics": 0.52,
+        "sk_business-thinking": 0.26
+      },
+      "byArea": {
+        "sql": 1.82,
+        "reading": 0.52,
+        "admin": 0.26
+      }
+    },
+    {
+      "date": "2026-07-12",
+      "hours": 1.4,
+      "xp": 88,
+      "tasksCompleted": 1,
+      "bySkill": {
+        "sk_analytics": 0.98,
+        "sk_metrics": 0.28,
+        "sk_business-thinking": 0.14
+      },
+      "byArea": {
+        "sql": 0.98,
+        "reading": 0.28,
+        "admin": 0.14
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "hours": 2.5,
+      "xp": 163,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 1.13,
+        "sk_metrics": 1,
+        "sk_communication": 0.38
+      },
+      "byArea": {
+        "sql": 1,
+        "analytics": 0.88,
+        "reading": 0.38,
+        "writing": 0.25
+      }
+    },
+    {
+      "date": "2026-07-16",
+      "hours": 3,
+      "xp": 210,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 1.35,
+        "sk_metrics": 1.2,
+        "sk_communication": 0.45
+      },
+      "byArea": {
+        "sql": 1.2,
+        "analytics": 1.05,
+        "reading": 0.45,
+        "writing": 0.3
+      }
+    },
+    {
+      "date": "2026-07-21",
+      "hours": 1.6,
+      "xp": 97,
+      "tasksCompleted": 1,
+      "bySkill": {
+        "sk_analytics": 0.72,
+        "sk_metrics": 0.64,
+        "sk_communication": 0.24
+      },
+      "byArea": {
+        "sql": 0.64,
+        "analytics": 0.56,
+        "reading": 0.24,
+        "writing": 0.16
+      }
+    },
+    {
+      "date": "2026-07-22",
+      "hours": 1.3,
+      "xp": 84,
+      "tasksCompleted": 1,
+      "bySkill": {
+        "sk_analytics": 0.45,
+        "sk_metrics": 0.39,
+        "sk_communication": 0.26,
+        "sk_product-sense": 0.2
+      },
+      "byArea": {
+        "sql": 0.39,
+        "analytics": 0.39,
+        "writing": 0.2,
+        "networking": 0.13,
+        "interview": 0.2
+      }
+    },
+    {
+      "date": "2026-07-23",
+      "hours": 2.7,
+      "xp": 197,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 0.95,
+        "sk_metrics": 0.81,
+        "sk_communication": 0.54,
+        "sk_product-sense": 0.41
+      },
+      "byArea": {
+        "sql": 0.81,
+        "analytics": 0.81,
+        "writing": 0.41,
+        "networking": 0.27,
+        "interview": 0.41
+      },
+      "note": "Wrote a window function without looking it up. First time."
+    },
+    {
+      "date": "2026-07-24",
+      "hours": 2.2,
+      "xp": 149,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 0.77,
+        "sk_metrics": 0.66,
+        "sk_communication": 0.44,
+        "sk_product-sense": 0.33
+      },
+      "byArea": {
+        "sql": 0.66,
+        "analytics": 0.66,
+        "writing": 0.33,
+        "networking": 0.22,
+        "interview": 0.33
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "hours": 3,
+      "xp": 210,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 1.05,
+        "sk_metrics": 0.9,
+        "sk_communication": 0.6,
+        "sk_product-sense": 0.45
+      },
+      "byArea": {
+        "sql": 0.9,
+        "analytics": 0.9,
+        "writing": 0.45,
+        "networking": 0.3,
+        "interview": 0.45
+      }
+    },
+    {
+      "date": "2026-07-26",
+      "hours": 2.1,
+      "xp": 145,
+      "tasksCompleted": 2,
+      "bySkill": {
+        "sk_analytics": 0.74,
+        "sk_metrics": 0.63,
+        "sk_communication": 0.42,
+        "sk_product-sense": 0.32
+      },
+      "byArea": {
+        "sql": 0.63,
+        "analytics": 0.63,
+        "writing": 0.32,
+        "networking": 0.21,
+        "interview": 0.32
+      }
+    },
+    {
+      "date": "2026-07-29",
+      "hours": 2.9,
+      "xp": 206,
+      "tasksCompleted": 3,
+      "bySkill": {
+        "sk_analytics": 1.01,
+        "sk_metrics": 0.87,
+        "sk_communication": 0.58,
+        "sk_product-sense": 0.44
+      },
+      "byArea": {
+        "sql": 0.87,
+        "analytics": 0.87,
+        "writing": 0.44,
+        "networking": 0.29,
+        "interview": 0.44
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "hours": 1.6,
+      "xp": 97,
+      "tasksCompleted": 1,
+      "bySkill": {
+        "sk_analytics": 0.56,
+        "sk_metrics": 0.48,
+        "sk_communication": 0.32,
+        "sk_product-sense": 0.24
+      },
+      "byArea": {
+        "sql": 0.48,
+        "analytics": 0.48,
+        "writing": 0.24,
+        "networking": 0.16,
+        "interview": 0.24
+      }
+    }
+  ],
+  "readinessHistory": [
+    {
+      "date": "2026-07-01",
+      "score": 45.9,
+      "skills": {
+        "sk_product-sense": 7.8,
+        "sk_product-strategy": 7.6,
+        "sk_product-execution": 9.2,
+        "sk_ux": 8.8,
+        "sk_systems-thinking": 9.5,
+        "sk_technical-depth": 7.5,
+        "sk_metrics": 6.8,
+        "sk_analytics": 6.5,
+        "sk_experimentation": 6.2,
+        "sk_communication": 8.2,
+        "sk_leadership": 8.4,
+        "sk_stakeholder-management": 8.8,
+        "sk_product-discovery": 7.4,
+        "sk_prioritization": 8.6,
+        "sk_ai-product-knowledge": 7.7,
+        "sk_business-thinking": 8
+      }
+    },
+    {
+      "date": "2026-07-08",
+      "score": 45.9,
+      "skills": {
+        "sk_product-sense": 7.8,
+        "sk_product-strategy": 7.6,
+        "sk_product-execution": 9.2,
+        "sk_ux": 8.8,
+        "sk_systems-thinking": 9.5,
+        "sk_technical-depth": 7.5,
+        "sk_metrics": 6.8,
+        "sk_analytics": 6.5,
+        "sk_experimentation": 6.2,
+        "sk_communication": 8.2,
+        "sk_leadership": 8.4,
+        "sk_stakeholder-management": 8.8,
+        "sk_product-discovery": 7.4,
+        "sk_prioritization": 8.6,
+        "sk_ai-product-knowledge": 7.7,
+        "sk_business-thinking": 8
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "score": 46.2,
+      "skills": {
+        "sk_product-sense": 7.8,
+        "sk_product-strategy": 7.6,
+        "sk_product-execution": 9.2,
+        "sk_ux": 8.8,
+        "sk_systems-thinking": 9.5,
+        "sk_technical-depth": 7.5,
+        "sk_metrics": 7,
+        "sk_analytics": 6.8,
+        "sk_experimentation": 6.3,
+        "sk_communication": 8.2,
+        "sk_leadership": 8.4,
+        "sk_stakeholder-management": 8.8,
+        "sk_product-discovery": 7.4,
+        "sk_prioritization": 8.6,
+        "sk_ai-product-knowledge": 7.7,
+        "sk_business-thinking": 8
+      }
+    },
+    {
+      "date": "2026-07-22",
+      "score": 46.2,
+      "skills": {
+        "sk_product-sense": 7.8,
+        "sk_product-strategy": 7.6,
+        "sk_product-execution": 9.2,
+        "sk_ux": 8.8,
+        "sk_systems-thinking": 9.5,
+        "sk_technical-depth": 7.5,
+        "sk_metrics": 7,
+        "sk_analytics": 6.8,
+        "sk_experimentation": 6.3,
+        "sk_communication": 8.2,
+        "sk_leadership": 8.4,
+        "sk_stakeholder-management": 8.8,
+        "sk_product-discovery": 7.4,
+        "sk_prioritization": 8.6,
+        "sk_ai-product-knowledge": 7.7,
+        "sk_business-thinking": 8
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "score": 46.5,
+      "skills": {
+        "sk_product-sense": 7.9,
+        "sk_product-strategy": 7.6,
+        "sk_product-execution": 9.2,
+        "sk_ux": 8.8,
+        "sk_systems-thinking": 9.5,
+        "sk_technical-depth": 7.5,
+        "sk_metrics": 7.2,
+        "sk_analytics": 7.1,
+        "sk_experimentation": 6.4,
+        "sk_communication": 8.2,
+        "sk_leadership": 8.4,
+        "sk_stakeholder-management": 8.8,
+        "sk_product-discovery": 7.4,
+        "sk_prioritization": 8.6,
+        "sk_ai-product-knowledge": 7.7,
+        "sk_business-thinking": 8.1
+      }
+    }
+  ],
+  "capacityHistory": [
+    {
+      "weekStart": "2026-06-29",
+      "plannedHours": 12,
+      "actualHours": 11.1
+    },
+    {
+      "weekStart": "2026-07-06",
+      "plannedHours": 12,
+      "actualHours": 12.1
+    },
+    {
+      "weekStart": "2026-07-13",
+      "plannedHours": 12,
+      "actualHours": 5.5
+    },
+    {
+      "weekStart": "2026-07-20",
+      "plannedHours": 12,
+      "actualHours": 12.9
+    },
+    {
+      "weekStart": "2026-07-27",
+      "plannedHours": 12,
+      "actualHours": 4.5
+    }
+  ]
+}

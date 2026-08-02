@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+.vite/
+
+# This project uses npm; package-lock.json is the authoritative lockfile.
+# Something in the local toolchain also emits a yarn.lock — two lockfiles drift,
+# so only one is tracked.
+yarn.lock
+
+# Scratch files from local experiments
+.smoke.mjs
+.diag.mjs
+.gauge*.mjs
+.gauge-*.png
+
+# NOTE: data/ and current_analysis.txt are deliberately NOT ignored.
+# They hold real career data, so the repo doubles as version history for your
+# progress — which only works while the repository stays private. See the
+# "Privacy" section of README.md before changing its visibility.

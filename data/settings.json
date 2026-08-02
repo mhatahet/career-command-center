@@ -1,0 +1,30 @@
+{
+  "theme": "dark",
+  "accent": "indigo",
+  "sidebarCollapsed": false,
+  "density": "comfortable",
+  "autoSave": true,
+  "showCelebrations": true,
+  "reduceMotion": false,
+  "weekStartsOn": 1,
+  "hiddenSections": [],
+  "dashboardLayout": [
+    "readiness",
+    "level",
+    "streak",
+    "hours",
+    "position",
+    "today",
+    "sprint",
+    "progress-rings",
+    "skills-radar",
+    "recommendations",
+    "milestones",
+    "activity",
+    "must-fix",
+    "portfolio",
+    "goals",
+    "achievement",
+    "companies"
+  ]
+}

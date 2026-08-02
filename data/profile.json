@@ -1,0 +1,47 @@
+{
+  "name": "Product Manager",
+  "currentRole": "Product Manager",
+  "currentCompany": "Enterprise SaaS",
+  "location": "Jordan",
+  "positioning": "Enterprise SaaS Product Manager specializing in complex workflows, UX systems, AI-enabled products, and scalable product execution.",
+  "headline": "Senior Product Manager | B2B SaaS | Enterprise UX | AI Products | Product Strategy | Systems Thinking",
+  "startDate": "2026-07-01",
+  "horizonMonths": 24,
+  "careerLevelLabel": "Product Manager — Top 10–15% locally",
+  "targetLevelLabel": "Senior Product Manager — Tier 1 / Tier 2 international",
+  "benchmark": {
+    "localPercentile": "Top 10–15% of Product Managers in Jordan",
+    "internationalPercentile": "Top 20–30% among international SaaS PMs",
+    "notYetCompetitiveFor": [
+      "Google L5",
+      "Stripe PM",
+      "Shopify Senior PM",
+      "Atlassian Senior PM",
+      "Canva Senior PM",
+      "Microsoft Senior PM"
+    ],
+    "alreadyCompetitiveFor": [
+      "Mid-size global SaaS with operational products",
+      "B2B SaaS",
+      "Logistics",
+      "Retail tech",
+      "ERP",
+      "Field service",
+      "Workflow software"
+    ]
+  },
+  "successProbability": {
+    "low": 65,
+    "high": 75,
+    "assumptions": [
+      "You remain in a role where you can generate measurable product outcomes.",
+      "You build a strong public portfolio and personal brand.",
+      "You achieve interview-ready proficiency in analytics and experimentation.",
+      "You maintain consistent execution over the full period.",
+      "You actively pursue referrals and targeted applications rather than relying solely on online job postings."
+    ]
+  },
+  "weeklyHourTarget": 12,
+  "bottleneck": "Your strongest abilities — systems thinking, enterprise UX, and execution — are not yet backed by equally strong public evidence in analytics, experimentation, and quantified business impact. Closing that gap will have the largest effect on your competitiveness.",
+  "highestValueSkill": "Data-informed product decision making: combining SQL, product analytics, experimentation, and business metrics. This complements your existing strengths rather than replacing them."
+}

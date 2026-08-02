@@ -1,0 +1,1069 @@
+{
+  "achievements": [
+    {
+      "id": "ach_first-step",
+      "name": "First Step",
+      "description": "Complete your first task. Everything compounds from here.",
+      "icon": "🌱",
+      "tier": "bronze",
+      "xp": 50,
+      "criterion": {
+        "type": "count",
+        "collection": "completed-tasks",
+        "value": 1
+      },
+      "unlockedAt": "2026-07-03T19:30:00.000Z",
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_sql-beginner",
+      "name": "SQL Beginner",
+      "description": "Finish SQLBolt and write your first join from memory.",
+      "icon": "🔤",
+      "tier": "bronze",
+      "xp": 100,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_analytics",
+        "value": 7
+      },
+      "unlockedAt": "2026-07-13T19:30:00.000Z",
+      "secret": false,
+      "category": "analytics"
+    },
+    {
+      "id": "ach_sql-intermediate",
+      "name": "SQL Intermediate",
+      "description": "Complete 50 interview-grade SQL questions. Window functions without looking them up.",
+      "icon": "🧮",
+      "tier": "silver",
+      "xp": 300,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_analytics",
+        "value": 8
+      },
+      "secret": false,
+      "category": "analytics"
+    },
+    {
+      "id": "ach_sql-advanced",
+      "name": "SQL Advanced",
+      "description": "Analytics at 9.0. SQL is no longer a weakness on any resume you write.",
+      "icon": "⚡",
+      "tier": "gold",
+      "xp": 600,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_analytics",
+        "value": 9
+      },
+      "secret": false,
+      "category": "analytics"
+    },
+    {
+      "id": "ach_metrics-architect",
+      "name": "Metrics Architect",
+      "description": "Build five complete metric trees, north star through guardrails.",
+      "icon": "🌳",
+      "tier": "silver",
+      "xp": 300,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_metrics",
+        "value": 8
+      },
+      "secret": false,
+      "category": "analytics"
+    },
+    {
+      "id": "ach_analytics-explorer",
+      "name": "Analytics Explorer",
+      "description": "Publish an analytics case study with funnel, retention and cohort analysis.",
+      "icon": "🔍",
+      "tier": "silver",
+      "xp": 350,
+      "criterion": {
+        "type": "count",
+        "collection": "published-portfolio",
+        "value": 1
+      },
+      "secret": false,
+      "category": "analytics"
+    },
+    {
+      "id": "ach_experiment-designer",
+      "name": "Experiment Designer",
+      "description": "Design ten complete A/B test plans and have them critiqued.",
+      "icon": "🧪",
+      "tier": "gold",
+      "xp": 500,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_experimentation",
+        "value": 8
+      },
+      "secret": false,
+      "category": "analytics"
+    },
+    {
+      "id": "ach_100-hours",
+      "name": "100 Hours Learned",
+      "description": "One hundred hours of deliberate practice logged.",
+      "icon": "💯",
+      "tier": "silver",
+      "xp": 250,
+      "criterion": {
+        "type": "total-hours",
+        "value": 100
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_250-hours",
+      "name": "250 Hours Learned",
+      "description": "Two hundred and fifty hours. This is where competence starts to show.",
+      "icon": "🎯",
+      "tier": "gold",
+      "xp": 500,
+      "criterion": {
+        "type": "total-hours",
+        "value": 250
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_500-hours",
+      "name": "500 Hours Learned",
+      "description": "Five hundred hours. Roughly the total the 80/20 table asks for.",
+      "icon": "🏔",
+      "tier": "gold",
+      "xp": 900,
+      "criterion": {
+        "type": "total-hours",
+        "value": 500
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_1000-hours",
+      "name": "1,000 Hours Learned",
+      "description": "A thousand hours of deliberate practice. Very few people get here.",
+      "icon": "👑",
+      "tier": "platinum",
+      "xp": 2000,
+      "criterion": {
+        "type": "total-hours",
+        "value": 1000
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_bookworm",
+      "name": "Well Read",
+      "description": "Finish six books. The audit asks for two to three per quarter.",
+      "icon": "📚",
+      "tier": "silver",
+      "xp": 300,
+      "criterion": {
+        "type": "count",
+        "collection": "finished-books",
+        "value": 6
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_core-six",
+      "name": "The Core Six",
+      "description": "Finish all six interview resources named in the audit.",
+      "icon": "📖",
+      "tier": "gold",
+      "xp": 600,
+      "criterion": {
+        "type": "count",
+        "collection": "finished-books",
+        "value": 6,
+        "filter": "core"
+      },
+      "secret": false,
+      "category": "interview"
+    },
+    {
+      "id": "ach_course-complete",
+      "name": "Course Complete",
+      "description": "Finish three courses and convert each into a real artefact.",
+      "icon": "🎓",
+      "tier": "silver",
+      "xp": 250,
+      "criterion": {
+        "type": "count",
+        "collection": "completed-courses",
+        "value": 3
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_first-case-study",
+      "name": "First Case Study",
+      "description": "Publish your first complete case study. The portfolio stops being hypothetical.",
+      "icon": "📄",
+      "tier": "silver",
+      "xp": 400,
+      "criterion": {
+        "type": "count",
+        "collection": "published-case-studies",
+        "value": 1
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_portfolio-three",
+      "name": "Portfolio Momentum",
+      "description": "Three published artefacts. A pattern rather than an accident.",
+      "icon": "📁",
+      "tier": "silver",
+      "xp": 500,
+      "criterion": {
+        "type": "count",
+        "collection": "published-portfolio",
+        "value": 3
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_portfolio-master",
+      "name": "Portfolio Master",
+      "description": "Six published artefacts — the audit's success metric for a competitive portfolio.",
+      "icon": "🗂",
+      "tier": "gold",
+      "xp": 1000,
+      "criterion": {
+        "type": "count",
+        "collection": "published-portfolio",
+        "value": 6
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_portfolio-eight",
+      "name": "Portfolio Complete",
+      "description": "Eight published artefacts. The top of the audit's stated range.",
+      "icon": "🏛",
+      "tier": "platinum",
+      "xp": 1500,
+      "criterion": {
+        "type": "count",
+        "collection": "published-portfolio",
+        "value": 8
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_ai-builder",
+      "name": "AI Builder",
+      "description": "Ship an AI product with a real evaluation set, not a demo.",
+      "icon": "🤖",
+      "tier": "gold",
+      "xp": 600,
+      "criterion": {
+        "type": "count",
+        "collection": "ai-projects",
+        "value": 1
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_teardown-series",
+      "name": "Teardown Specialist",
+      "description": "Publish five product teardowns. A series that compounds.",
+      "icon": "🔩",
+      "tier": "gold",
+      "xp": 550,
+      "criterion": {
+        "type": "count",
+        "collection": "teardowns",
+        "value": 5
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_open-source",
+      "name": "Open Source Contributor",
+      "description": "Get a contribution merged into a reputable project.",
+      "icon": "🌐",
+      "tier": "silver",
+      "xp": 350,
+      "criterion": {
+        "type": "count",
+        "collection": "published-portfolio",
+        "value": 7
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_discovery-specialist",
+      "name": "Discovery Specialist",
+      "description": "Product Discovery at 8.5. Ten interviews and a real opportunity tree behind it.",
+      "icon": "🧭",
+      "tier": "gold",
+      "xp": 500,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_product-discovery",
+        "value": 8.5
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_systems-thinker",
+      "name": "Systems Thinker",
+      "description": "Publish two architecture documents an engineer would sign off on.",
+      "icon": "🕸",
+      "tier": "gold",
+      "xp": 550,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_technical-depth",
+        "value": 8.5
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_product-strategist",
+      "name": "Product Strategist",
+      "description": "Product Strategy at 8.8. \"Should we build this at all?\" is now your natural altitude.",
+      "icon": "♟",
+      "tier": "gold",
+      "xp": 600,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_product-strategy",
+        "value": 8.8
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_growth-analyst",
+      "name": "Growth Analyst",
+      "description": "Model a growth loop, find the leak, size the fix.",
+      "icon": "📈",
+      "tier": "silver",
+      "xp": 400,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_business-thinking",
+        "value": 8.8
+      },
+      "secret": false,
+      "category": "portfolio"
+    },
+    {
+      "id": "ach_product-sense-20",
+      "name": "Twenty Critiques",
+      "description": "Twenty structured product critiques, including the consumer ones.",
+      "icon": "👁",
+      "tier": "silver",
+      "xp": 400,
+      "criterion": {
+        "type": "skill-score",
+        "skillId": "sk_product-sense",
+        "value": 8.5
+      },
+      "secret": false,
+      "category": "learning"
+    },
+    {
+      "id": "ach_first-article",
+      "name": "Published",
+      "description": "Publish your first long-form article. Discoverability starts now.",
+      "icon": "✍️",
+      "tier": "bronze",
+      "xp": 150,
+      "criterion": {
+        "type": "count",
+        "collection": "published-writing",
+        "value": 1
+      },
+      "secret": false,
+      "category": "brand"
+    },
+    {
+      "id": "ach_top-writer",
+      "name": "Top Writer",
+      "description": "Publish six long-form articles. A body of work, not a post.",
+      "icon": "🖊",
+      "tier": "gold",
+      "xp": 600,
+      "criterion": {
+        "type": "count",
+        "collection": "published-writing",
+        "value": 6
+      },
+      "secret": false,
+      "category": "brand"
+    },
+    {
+      "id": "ach_writer-24",
+      "name": "Twenty-Four Articles",
+      "description": "One article a month for twenty-four months. The full cadence, unbroken.",
+      "icon": "📰",
+      "tier": "platinum",
+      "xp": 1600,
+      "criterion": {
+        "type": "count",
+        "collection": "published-writing",
+        "value": 24
+      },
+      "secret": false,
+      "category": "brand"
+    },
+    {
+      "id": "ach_networking-champion",
+      "name": "Networking Champion",
+      "description": "A hundred meaningful professional connections.",
+      "icon": "🤝",
+      "tier": "gold",
+      "xp": 550,
+      "criterion": {
+        "type": "count",
+        "collection": "contacts",
+        "value": 100
+      },
+      "secret": false,
+      "category": "brand"
+    },
+    {
+      "id": "ach_first-referral",
+      "name": "First Referral",
+      "description": "Someone puts their own reputation behind you.",
+      "icon": "🎫",
+      "tier": "gold",
+      "xp": 500,
+      "criterion": {
+        "type": "count",
+        "collection": "referrals",
+        "value": 1
+      },
+      "secret": false,
+      "category": "brand"
+    },
+    {
+      "id": "ach_five-referrals",
+      "name": "Referral Network",
+      "description": "Five referrals from target companies — an audit success metric.",
+      "icon": "🎟",
+      "tier": "platinum",
+      "xp": 1200,
+      "criterion": {
+        "type": "count",
+        "collection": "referrals",
+        "value": 5
+      },
+      "secret": false,
+      "category": "brand"
+    },
+    {
+      "id": "ach_first-mock",
+      "name": "First Mock",
+      "description": "Complete your first mock interview. It is meant to be uncomfortable.",
+      "icon": "🎤",
+      "tier": "bronze",
+      "xp": 100,
+      "criterion": {
+        "type": "count",
+        "collection": "mock-interviews",
+        "value": 1
+      },
+      "unlockedAt": "2026-07-13T19:30:00.000Z",
+      "secret": false,
+      "category": "interview"
+    },
+    {
+      "id": "ach_mock-interview-expert",
+      "name": "Mock Interview Expert",
+      "description": "Twenty-five mock interviews completed and reviewed.",
+      "icon": "🎙",
+      "tier": "gold",
+      "xp": 700,
+      "criterion": {
+        "type": "count",
+        "collection": "mock-interviews",
+        "value": 25
+      },
+      "secret": false,
+      "category": "interview"
+    },
+    {
+      "id": "ach_mock-century",
+      "name": "Mock Century",
+      "description": "A hundred mock interviews. Performance is now reliable, not lucky.",
+      "icon": "🏅",
+      "tier": "platinum",
+      "xp": 1800,
+      "criterion": {
+        "type": "count",
+        "collection": "mock-interviews",
+        "value": 100
+      },
+      "secret": false,
+      "category": "interview"
+    },
+    {
+      "id": "ach_question-bank",
+      "name": "Question Bank Cleared",
+      "description": "Practise fifty questions from the bank at least once.",
+      "icon": "🗃",
+      "tier": "silver",
+      "xp": 350,
+      "criterion": {
+        "type": "count",
+        "collection": "questions-practiced",
+        "value": 50
+      },
+      "secret": false,
+      "category": "interview"
+    },
+    {
+      "id": "ach_first-application",
+      "name": "In the Arena",
+      "description": "Submit your first targeted application.",
+      "icon": "📮",
+      "tier": "bronze",
+      "xp": 150,
+      "criterion": {
+        "type": "count",
+        "collection": "applications",
+        "value": 1
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_fifty-applications",
+      "name": "Fifty Applications",
+      "description": "Fifty targeted, referral-backed applications.",
+      "icon": "📬",
+      "tier": "gold",
+      "xp": 700,
+      "criterion": {
+        "type": "count",
+        "collection": "applications",
+        "value": 50
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_streak-7",
+      "name": "One Week",
+      "description": "A seven-day streak.",
+      "icon": "🔥",
+      "tier": "bronze",
+      "xp": 100,
+      "criterion": {
+        "type": "streak-days",
+        "value": 7
+      },
+      "unlockedAt": "2026-07-13T19:30:00.000Z",
+      "secret": false,
+      "category": "consistency"
+    },
+    {
+      "id": "ach_streak-30",
+      "name": "One Month",
+      "description": "A thirty-day streak. The habit is real now.",
+      "icon": "🔥",
+      "tier": "silver",
+      "xp": 300,
+      "criterion": {
+        "type": "streak-days",
+        "value": 30
+      },
+      "secret": false,
+      "category": "consistency"
+    },
+    {
+      "id": "ach_streak-100",
+      "name": "Hundred Day Streak",
+      "description": "A hundred consecutive days. This is the thing that actually predicts the outcome.",
+      "icon": "☄️",
+      "tier": "gold",
+      "xp": 800,
+      "criterion": {
+        "type": "streak-days",
+        "value": 100
+      },
+      "secret": false,
+      "category": "consistency"
+    },
+    {
+      "id": "ach_streak-365",
+      "name": "A Full Year",
+      "description": "Three hundred and sixty-five consecutive days.",
+      "icon": "🌟",
+      "tier": "platinum",
+      "xp": 2500,
+      "criterion": {
+        "type": "streak-days",
+        "value": 365
+      },
+      "secret": false,
+      "category": "consistency"
+    },
+    {
+      "id": "ach_journal-30",
+      "name": "Reflective Practitioner",
+      "description": "Thirty journal entries. Reflection is what turns hours into learning.",
+      "icon": "📔",
+      "tier": "silver",
+      "xp": 250,
+      "criterion": {
+        "type": "count",
+        "collection": "journal-entries",
+        "value": 30
+      },
+      "secret": false,
+      "category": "consistency"
+    },
+    {
+      "id": "ach_chapter-1",
+      "name": "Month One Complete",
+      "description": "Finish the SQL and metrics chapter. The hardest month is the first one.",
+      "icon": "1️⃣",
+      "tier": "silver",
+      "xp": 300,
+      "criterion": {
+        "type": "chapter-complete",
+        "month": 1
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_quarter-1",
+      "name": "Foundations Laid",
+      "description": "Complete every chapter in Q1: SQL, analytics, experimentation.",
+      "icon": "🧱",
+      "tier": "gold",
+      "xp": 700,
+      "criterion": {
+        "type": "all-chapters-in-quarter",
+        "quarter": 1
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_level-10",
+      "name": "Level 10",
+      "description": "Reach level 10.",
+      "icon": "⭐",
+      "tier": "silver",
+      "xp": 0,
+      "criterion": {
+        "type": "level",
+        "value": 10
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_level-25",
+      "name": "Level 25",
+      "description": "Reach level 25.",
+      "icon": "✨",
+      "tier": "gold",
+      "xp": 0,
+      "criterion": {
+        "type": "level",
+        "value": 25
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_level-50",
+      "name": "Level 50",
+      "description": "Reach level 50.",
+      "icon": "💫",
+      "tier": "platinum",
+      "xp": 0,
+      "criterion": {
+        "type": "level",
+        "value": 50
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_career-sprint-complete",
+      "name": "Career Sprint Complete",
+      "description": "Finish the first twelve months of the roadmap.",
+      "icon": "🚩",
+      "tier": "gold",
+      "xp": 1200,
+      "criterion": {
+        "type": "chapter-complete",
+        "month": 12
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_halfway",
+      "name": "Halfway There",
+      "description": "Twelve months down, twelve to go.",
+      "icon": "⏳",
+      "tier": "gold",
+      "xp": 800,
+      "criterion": {
+        "type": "chapter-complete",
+        "month": 12
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_top-10-percent",
+      "name": "Top 10% Ready",
+      "description": "Readiness score of 80. Competitive for most Tier 2 companies.",
+      "icon": "🥈",
+      "tier": "gold",
+      "xp": 1000,
+      "criterion": {
+        "type": "readiness",
+        "value": 80
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_faang-ready",
+      "name": "FAANG Ready",
+      "description": "Readiness score of 90. The Tier 1 bar, on your own evidence.",
+      "icon": "🥇",
+      "tier": "platinum",
+      "xp": 2500,
+      "criterion": {
+        "type": "readiness",
+        "value": 90
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_no-weak-scores",
+      "name": "No Weak Links",
+      "description": "Every competency at 8.0 or above. Nothing left for an interviewer to find.",
+      "icon": "🛡",
+      "tier": "platinum",
+      "xp": 2000,
+      "criterion": {
+        "type": "manual"
+      },
+      "secret": false,
+      "category": "milestone"
+    },
+    {
+      "id": "ach_offer",
+      "name": "Offer in Hand",
+      "description": "Receive an offer from a target company. The whole point.",
+      "icon": "🎉",
+      "tier": "platinum",
+      "xp": 5000,
+      "criterion": {
+        "type": "manual"
+      },
+      "secret": false,
+      "category": "milestone"
+    }
+  ],
+  "badges": [
+    {
+      "id": "bdg_hours",
+      "name": "Hours Invested",
+      "description": "Total deliberate practice logged.",
+      "icon": "⏱",
+      "levels": [
+        {
+          "label": "Novice",
+          "threshold": 25
+        },
+        {
+          "label": "Apprentice",
+          "threshold": 100
+        },
+        {
+          "label": "Practitioner",
+          "threshold": 250
+        },
+        {
+          "label": "Expert",
+          "threshold": 500
+        },
+        {
+          "label": "Master",
+          "threshold": 1000
+        }
+      ],
+      "criterion": {
+        "type": "total-hours",
+        "value": 1000
+      },
+      "category": "learning"
+    },
+    {
+      "id": "bdg_streak",
+      "name": "Consistency",
+      "description": "Longest unbroken streak of logged work.",
+      "icon": "🔥",
+      "levels": [
+        {
+          "label": "Spark",
+          "threshold": 7
+        },
+        {
+          "label": "Flame",
+          "threshold": 30
+        },
+        {
+          "label": "Blaze",
+          "threshold": 60
+        },
+        {
+          "label": "Inferno",
+          "threshold": 100
+        },
+        {
+          "label": "Eternal",
+          "threshold": 365
+        }
+      ],
+      "criterion": {
+        "type": "streak-days",
+        "value": 365
+      },
+      "category": "consistency"
+    },
+    {
+      "id": "bdg_portfolio",
+      "name": "Portfolio",
+      "description": "Published public artefacts.",
+      "icon": "🗂",
+      "levels": [
+        {
+          "label": "First",
+          "threshold": 1
+        },
+        {
+          "label": "Building",
+          "threshold": 3
+        },
+        {
+          "label": "Credible",
+          "threshold": 5
+        },
+        {
+          "label": "Competitive",
+          "threshold": 6
+        },
+        {
+          "label": "Exceptional",
+          "threshold": 8
+        }
+      ],
+      "criterion": {
+        "type": "count",
+        "collection": "published-portfolio",
+        "value": 8
+      },
+      "category": "portfolio"
+    },
+    {
+      "id": "bdg_mocks",
+      "name": "Interview Reps",
+      "description": "Mock interviews completed.",
+      "icon": "🎤",
+      "levels": [
+        {
+          "label": "Starting",
+          "threshold": 1
+        },
+        {
+          "label": "Warming Up",
+          "threshold": 10
+        },
+        {
+          "label": "Practised",
+          "threshold": 25
+        },
+        {
+          "label": "Sharp",
+          "threshold": 50
+        },
+        {
+          "label": "Relentless",
+          "threshold": 100
+        }
+      ],
+      "criterion": {
+        "type": "count",
+        "collection": "mock-interviews",
+        "value": 100
+      },
+      "category": "interview"
+    },
+    {
+      "id": "bdg_writing",
+      "name": "Published Writing",
+      "description": "Long-form articles published.",
+      "icon": "✍️",
+      "levels": [
+        {
+          "label": "Debut",
+          "threshold": 1
+        },
+        {
+          "label": "Regular",
+          "threshold": 3
+        },
+        {
+          "label": "Prolific",
+          "threshold": 6
+        },
+        {
+          "label": "Authority",
+          "threshold": 12
+        },
+        {
+          "label": "Body of Work",
+          "threshold": 24
+        }
+      ],
+      "criterion": {
+        "type": "count",
+        "collection": "published-writing",
+        "value": 24
+      },
+      "category": "brand"
+    },
+    {
+      "id": "bdg_network",
+      "name": "Network",
+      "description": "Meaningful professional connections.",
+      "icon": "🤝",
+      "levels": [
+        {
+          "label": "Seeded",
+          "threshold": 10
+        },
+        {
+          "label": "Growing",
+          "threshold": 30
+        },
+        {
+          "label": "Connected",
+          "threshold": 60
+        },
+        {
+          "label": "Well Networked",
+          "threshold": 100
+        },
+        {
+          "label": "Influential",
+          "threshold": 200
+        }
+      ],
+      "criterion": {
+        "type": "count",
+        "collection": "contacts",
+        "value": 200
+      },
+      "category": "brand"
+    },
+    {
+      "id": "bdg_readiness",
+      "name": "Career Readiness",
+      "description": "Overall weighted readiness score.",
+      "icon": "🎯",
+      "levels": [
+        {
+          "label": "Emerging",
+          "threshold": 60
+        },
+        {
+          "label": "Solid",
+          "threshold": 70
+        },
+        {
+          "label": "Strong",
+          "threshold": 80
+        },
+        {
+          "label": "Tier-1 Ready",
+          "threshold": 90
+        },
+        {
+          "label": "Exceptional",
+          "threshold": 95
+        }
+      ],
+      "criterion": {
+        "type": "readiness",
+        "value": 95
+      },
+      "category": "milestone"
+    },
+    {
+      "id": "bdg_books",
+      "name": "Reading",
+      "description": "Books finished.",
+      "icon": "📚",
+      "levels": [
+        {
+          "label": "Started",
+          "threshold": 1
+        },
+        {
+          "label": "Reading",
+          "threshold": 3
+        },
+        {
+          "label": "Well Read",
+          "threshold": 6
+        },
+        {
+          "label": "Scholar",
+          "threshold": 12
+        },
+        {
+          "label": "Voracious",
+          "threshold": 20
+        }
+      ],
+      "criterion": {
+        "type": "count",
+        "collection": "finished-books",
+        "value": 20
+      },
+      "category": "learning"
+    }
+  ]
+}

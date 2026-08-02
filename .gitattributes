@@ -1,0 +1,7 @@
+# Normalise line endings so the repo does not churn between machines.
+# Everything is stored LF in git and checked out native on Windows.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary

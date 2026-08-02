@@ -1,0 +1,287 @@
+/* ============================================================================
+   Design tokens
+   ----------------------------------------------------------------------------
+   One source of truth for colour, type, space, radius, shadow and motion.
+   Both themes define the same variable names, so components never branch on
+   theme — they just consume semantic tokens.
+   ========================================================================= */
+
+:root {
+  /* ---- Type scale (1.200 minor third, 14px base) ------------------------ */
+  --font-sans: 'Inter var', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Text',
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', ui-monospace, 'Segoe UI Mono',
+    Menlo, Consolas, monospace;
+
+  --text-2xs: 0.6875rem; /* 11px — dense table meta, axis labels */
+  --text-xs: 0.75rem; /*    12px — labels, captions */
+  --text-sm: 0.8125rem; /*  13px — secondary body */
+  --text-base: 0.875rem; /* 14px — body */
+  --text-md: 0.9375rem; /*  15px — emphasised body */
+  --text-lg: 1.0625rem; /*  17px — card titles */
+  --text-xl: 1.3125rem; /*  21px — section titles */
+  --text-2xl: 1.625rem; /*  26px — page titles */
+  --text-3xl: 2rem; /*      32px — hero numerals */
+  --text-4xl: 2.75rem; /*   44px — the one big number */
+
+  --weight-normal: 420;
+  --weight-medium: 520;
+  --weight-semibold: 600;
+  --weight-bold: 680;
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.7;
+
+  --tracking-tight: -0.014em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+
+  /* ---- Space (4px base) ------------------------------------------------- */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* ---- Radius ----------------------------------------------------------- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-full: 999px;
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-instant: 80ms;
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+  --dur-slow: 380ms;
+  --dur-slower: 620ms;
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --sidebar-w: 248px;
+  --sidebar-w-collapsed: 60px;
+  --topbar-h: 56px;
+  --content-max: 1560px;
+
+  /* ---- Brand hues (identical across themes; lightness handled per theme) - */
+  --hue-indigo: 244;
+  --hue-violet: 268;
+  --hue-cyan: 190;
+  --hue-emerald: 158;
+  --hue-amber: 38;
+  --hue-rose: 350;
+  --hue-blue: 214;
+
+  /* ---- Data-visualisation series ---------------------------------------
+     Eight hues, ordered so that any prefix of the list stays distinguishable.
+     Chosen for roughly even perceived lightness so no series dominates.     */
+  --viz-1: #6366f1;
+  --viz-2: #06b6d4;
+  --viz-3: #10b981;
+  --viz-4: #f59e0b;
+  --viz-5: #f43f5e;
+  --viz-6: #a855f7;
+  --viz-7: #3b82f6;
+  --viz-8: #84cc16;
+}
+
+/* ============================================================================
+   Dark theme (default)
+   ========================================================================= */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Surfaces, from furthest back to furthest forward */
+  --bg-canvas: #08080b;
+  --bg-base: #0d0d11;
+  --bg-subtle: #131318;
+  --bg-raised: #17171d;
+  --bg-overlay: #1c1c23;
+  --bg-inset: #0a0a0d;
+
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --bg-active: rgba(255, 255, 255, 0.07);
+  --bg-selected: rgba(99, 102, 241, 0.14);
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.055);
+  --border-default: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-focus: #7c7cf0;
+
+  /* Text */
+  --text-primary: #edeef2;
+  --text-secondary: #a3a3b2;
+  --text-tertiary: #75758a;
+  --text-quaternary: #4e4e60;
+  --text-inverted: #0d0d11;
+  --text-on-accent: #ffffff;
+
+  /* Accent */
+  --accent: #6366f1;
+  --accent-hover: #7376f5;
+  --accent-active: #575ae0;
+  --accent-subtle: rgba(99, 102, 241, 0.13);
+  --accent-subtle-hover: rgba(99, 102, 241, 0.2);
+  --accent-border: rgba(99, 102, 241, 0.34);
+  --accent-text: #a5a7fb;
+
+  /* Semantic */
+  --success: #10b981;
+  --success-subtle: rgba(16, 185, 129, 0.13);
+  --success-border: rgba(16, 185, 129, 0.32);
+  --success-text: #4ade9f;
+
+  --warning: #f59e0b;
+  --warning-subtle: rgba(245, 158, 11, 0.13);
+  --warning-border: rgba(245, 158, 11, 0.32);
+  --warning-text: #fbbf4b;
+
+  --danger: #f43f5e;
+  --danger-subtle: rgba(244, 63, 94, 0.13);
+  --danger-border: rgba(244, 63, 94, 0.32);
+  --danger-text: #fb7185;
+
+  --info: #06b6d4;
+  --info-subtle: rgba(6, 182, 212, 0.13);
+  --info-border: rgba(6, 182, 212, 0.32);
+  --info-text: #38d3ec;
+
+  --neutral-subtle: rgba(255, 255, 255, 0.06);
+  --neutral-border: rgba(255, 255, 255, 0.13);
+
+  /* Track colour behind every progress indicator */
+  --track: rgba(255, 255, 255, 0.075);
+
+  /* Shadows — dark themes need less blur and more contrast in the border */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.42), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.32);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-focus: 0 0 0 3px rgba(99, 102, 241, 0.32);
+
+  --grid-line: rgba(255, 255, 255, 0.06);
+  --grid-line-strong: rgba(255, 255, 255, 0.11);
+
+  /* Heat-map ramp, 0 (empty) → 4 (most activity) */
+  --heat-0: rgba(255, 255, 255, 0.045);
+  --heat-1: rgba(99, 102, 241, 0.3);
+  --heat-2: rgba(99, 102, 241, 0.52);
+  --heat-3: rgba(99, 102, 241, 0.76);
+  --heat-4: #7c7ff5;
+
+  --scrim: rgba(0, 0, 0, 0.62);
+  --glow-accent: 0 0 24px rgba(99, 102, 241, 0.28);
+  --glow-success: 0 0 24px rgba(16, 185, 129, 0.26);
+}
+
+/* ============================================================================
+   Light theme
+   ========================================================================= */
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg-canvas: #f7f7f9;
+  --bg-base: #ffffff;
+  --bg-subtle: #f4f4f6;
+  --bg-raised: #ffffff;
+  --bg-overlay: #ffffff;
+  --bg-inset: #fafafb;
+
+  --bg-hover: rgba(9, 9, 20, 0.035);
+  --bg-active: rgba(9, 9, 20, 0.06);
+  --bg-selected: rgba(99, 102, 241, 0.09);
+
+  --border-subtle: rgba(9, 9, 20, 0.06);
+  --border-default: rgba(9, 9, 20, 0.105);
+  --border-strong: rgba(9, 9, 20, 0.18);
+  --border-focus: #6366f1;
+
+  --text-primary: #14141b;
+  --text-secondary: #55556a;
+  --text-tertiary: #7a7a90;
+  --text-quaternary: #a2a2b4;
+  --text-inverted: #ffffff;
+  --text-on-accent: #ffffff;
+
+  --accent: #5b5bd6;
+  --accent-hover: #4f4fce;
+  --accent-active: #4444c0;
+  --accent-subtle: rgba(91, 91, 214, 0.085);
+  --accent-subtle-hover: rgba(91, 91, 214, 0.14);
+  --accent-border: rgba(91, 91, 214, 0.26);
+  --accent-text: #4646c4;
+
+  --success: #059669;
+  --success-subtle: rgba(5, 150, 105, 0.09);
+  --success-border: rgba(5, 150, 105, 0.26);
+  --success-text: #047857;
+
+  --warning: #d97706;
+  --warning-subtle: rgba(217, 119, 6, 0.1);
+  --warning-border: rgba(217, 119, 6, 0.26);
+  --warning-text: #b45309;
+
+  --danger: #e11d48;
+  --danger-subtle: rgba(225, 29, 72, 0.085);
+  --danger-border: rgba(225, 29, 72, 0.24);
+  --danger-text: #be123c;
+
+  --info: #0891b2;
+  --info-subtle: rgba(8, 145, 178, 0.09);
+  --info-border: rgba(8, 145, 178, 0.26);
+  --info-text: #0e7490;
+
+  --neutral-subtle: rgba(9, 9, 20, 0.045);
+  --neutral-border: rgba(9, 9, 20, 0.11);
+
+  --track: rgba(9, 9, 20, 0.075);
+
+  --shadow-xs: 0 1px 2px rgba(16, 18, 40, 0.05);
+  --shadow-sm: 0 1px 3px rgba(16, 18, 40, 0.07), 0 1px 2px rgba(16, 18, 40, 0.04);
+  --shadow-md: 0 4px 14px rgba(16, 18, 40, 0.08), 0 1px 3px rgba(16, 18, 40, 0.05);
+  --shadow-lg: 0 12px 34px rgba(16, 18, 40, 0.1), 0 2px 8px rgba(16, 18, 40, 0.05);
+  --shadow-xl: 0 24px 64px rgba(16, 18, 40, 0.14), 0 4px 16px rgba(16, 18, 40, 0.07);
+  --shadow-focus: 0 0 0 3px rgba(91, 91, 214, 0.22);
+
+  --grid-line: rgba(9, 9, 20, 0.065);
+  --grid-line-strong: rgba(9, 9, 20, 0.12);
+
+  --heat-0: rgba(9, 9, 20, 0.05);
+  --heat-1: rgba(91, 91, 214, 0.22);
+  --heat-2: rgba(91, 91, 214, 0.44);
+  --heat-3: rgba(91, 91, 214, 0.68);
+  --heat-4: #5b5bd6;
+
+  --scrim: rgba(20, 20, 32, 0.42);
+  --glow-accent: 0 0 20px rgba(91, 91, 214, 0.16);
+  --glow-success: 0 0 20px rgba(5, 150, 105, 0.14);
+
+  /* Slightly deeper viz hues so series hold up against white */
+  --viz-1: #5b5bd6;
+  --viz-2: #0891b2;
+  --viz-3: #059669;
+  --viz-4: #d97706;
+  --viz-5: #e11d48;
+  --viz-6: #9333ea;
+  --viz-7: #2563eb;
+  --viz-8: #65a30d;
+}

@@ -1,0 +1,1082 @@
+{
+  "questions": [
+    {
+      "id": "q_001",
+      "prompt": "Design a product that helps warehouse workers pick orders faster.",
+      "track": "product-sense",
+      "difficulty": 3,
+      "company": "Amazon",
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Comprehend the situation (throughput vs accuracy tradeoff), list users (picker, supervisor, planner), pick the picker, list their jobs, cut to the top pain (walking distance and search time), three solutions, pick one, define success (units picked/hour with an error-rate guardrail).",
+      "framework": "CIRCLES",
+      "skillIds": [
+        "sk_product-sense",
+        "sk_ux"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_002",
+      "prompt": "How would you improve Google Maps for someone who has just moved to a new city?",
+      "track": "product-sense",
+      "difficulty": 3,
+      "company": "Google",
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Anchor on the newcomer job: building a mental model of a place, not navigating a known route. Solution space is orientation and discovery, not routing.",
+      "framework": "CIRCLES",
+      "skillIds": [
+        "sk_product-sense"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_003",
+      "prompt": "Your favourite product is losing to a competitor. What do you do?",
+      "track": "product-sense",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Segment the loss (which users, which use case, new vs existing). Distinguish a product gap from a distribution gap — they have completely different responses.",
+      "framework": "Diagnose → Hypothesise → Act",
+      "skillIds": [
+        "sk_product-sense",
+        "sk_product-strategy"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_004",
+      "prompt": "Design a feature that makes Slack better for a 50,000-person company.",
+      "track": "product-sense",
+      "difficulty": 4,
+      "company": "Slack",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "At that size the problem inverts: the constraint is finding signal, not sending messages. Design for discovery and information decay, not communication.",
+      "framework": "CIRCLES",
+      "skillIds": [
+        "sk_product-sense",
+        "sk_systems-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_005",
+      "prompt": "How would you design an admin dashboard for a field-service company?",
+      "track": "product-sense",
+      "difficulty": 2,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Your home territory — use it to show depth. Roles, permissions, offline states, exception handling. Lead with the mental model, not the screens.",
+      "framework": "CIRCLES",
+      "skillIds": [
+        "sk_ux",
+        "sk_systems-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_006",
+      "prompt": "Pick a product you think is badly designed and fix it.",
+      "track": "product-sense",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Name the user and job first. Be specific about the friction and how you would measure it. Say what you would deliberately not fix.",
+      "framework": "Critique template",
+      "skillIds": [
+        "sk_product-sense",
+        "sk_ux"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_007",
+      "prompt": "Design a product for people learning a new language.",
+      "track": "product-sense",
+      "difficulty": 3,
+      "company": "Duolingo",
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-18",
+      "confidence": 3,
+      "score": 6,
+      "scoreHistory": [
+        {
+          "date": "2026-07-18",
+          "score": 6
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Deliberately a consumer question — the audit's named blind spot. Lead with the behavioural mechanic (streaks, variable reward, endowed progress) before any feature.",
+      "framework": "CIRCLES",
+      "skillIds": [
+        "sk_product-sense"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_008",
+      "prompt": "How would you improve onboarding for a complex B2B product?",
+      "track": "product-sense",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Time-to-first-value is the metric. In B2B the buyer and the user differ, so onboarding has two audiences with different definitions of value.",
+      "framework": "Funnel + JTBD",
+      "skillIds": [
+        "sk_product-sense",
+        "sk_product-discovery"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_009",
+      "prompt": "You are two weeks from launch and QA finds a critical bug. What do you do?",
+      "track": "execution",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Assess severity and blast radius, generate three options (delay, ship with mitigation, cut scope), state the recommendation with its cost, communicate before you are asked.",
+      "framework": "Assess → Options → Decide → Communicate",
+      "skillIds": [
+        "sk_product-execution",
+        "sk_stakeholder-management"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_010",
+      "prompt": "How do you decide what goes into an MVP?",
+      "track": "execution",
+      "difficulty": 2,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "The MVP tests the riskiest assumption, it is not a smaller version of the product. Say explicitly what you are learning and what would make you stop.",
+      "framework": "Riskiest assumption first",
+      "skillIds": [
+        "sk_product-execution",
+        "sk_prioritization"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_011",
+      "prompt": "Engineering says the feature will take three times longer than estimated. How do you respond?",
+      "track": "execution",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Understand where the estimate changed, separate essential complexity from accidental, then look for a smaller version that tests the same assumption.",
+      "framework": "Understand → Reframe → Sequence",
+      "skillIds": [
+        "sk_product-execution",
+        "sk_stakeholder-management"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_012",
+      "prompt": "Walk me through how you would roll out a risky change to 10 million users.",
+      "track": "execution",
+      "difficulty": 4,
+      "company": "Google",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Internal → 1% → 5% → 25% → 100%, with guardrail metrics and a pre-agreed rollback trigger at each stage. Name the metric that halts the rollout.",
+      "framework": "Staged rollout",
+      "skillIds": [
+        "sk_product-execution",
+        "sk_experimentation"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_013",
+      "prompt": "How do you write a PRD that engineers actually read?",
+      "track": "execution",
+      "difficulty": 2,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Problem and decision at the top, open questions visible, and the edge cases enumerated rather than implied. Your genuine strength — lead with a real example.",
+      "framework": "Structure",
+      "skillIds": [
+        "sk_product-execution",
+        "sk_communication"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_014",
+      "prompt": "A stakeholder keeps adding scope. How do you handle it?",
+      "track": "execution",
+      "difficulty": 3,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-25",
+      "confidence": 3,
+      "score": 7,
+      "scoreHistory": [
+        {
+          "date": "2026-07-25",
+          "score": 7
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Never refuse; price it. \"Yes, and that moves the date by two weeks\" converts an argument into a decision they have to own.",
+      "framework": "Make the tradeoff visible",
+      "skillIds": [
+        "sk_stakeholder-management",
+        "sk_prioritization"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_015",
+      "prompt": "Should Google enter the project-management software market?",
+      "track": "strategy",
+      "difficulty": 5,
+      "company": "Google",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Where would we win, what would have to be true, what does it cost us in focus, and what is the kill criterion. Reach an actual recommendation.",
+      "framework": "Market entry",
+      "skillIds": [
+        "sk_product-strategy",
+        "sk_business-thinking"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_016",
+      "prompt": "How would you think about Stripe expanding into a new financial product?",
+      "track": "strategy",
+      "difficulty": 5,
+      "company": "Stripe",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Adjacency in capability vs adjacency in customer. Stripe's moat is developer trust and integration depth — evaluate whether the new product compounds it.",
+      "framework": "Adjacency",
+      "skillIds": [
+        "sk_product-strategy"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_017",
+      "prompt": "Our competitor just launched at half our price. What is our strategy?",
+      "track": "strategy",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Do not reflexively match. Segment on willingness to pay, understand what they cut to reach that price, and decide whether to defend, ignore, or reposition.",
+      "framework": "Positioning",
+      "skillIds": [
+        "sk_product-strategy",
+        "sk_business-thinking"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_018",
+      "prompt": "How do you decide whether to build, buy or partner?",
+      "track": "strategy",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Build what is core to the differentiation; buy or partner for context. The test is whether being best in the world at this changes whether customers choose you.",
+      "framework": "Core vs context",
+      "skillIds": [
+        "sk_product-strategy"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_019",
+      "prompt": "What is your three-year vision for a product you know well?",
+      "track": "strategy",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "A vision is a description of the world, not a feature list. Then the strategy that gets there, then the first two quarters. Most candidates only do the third.",
+      "framework": "Vision → Strategy → Roadmap",
+      "skillIds": [
+        "sk_product-strategy",
+        "sk_communication"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_020",
+      "prompt": "Should we go upmarket to enterprise or down to SMB?",
+      "track": "strategy",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "The answer is determined by which motion your product and org can actually execute. Enterprise changes the product, the sales model and the support cost together.",
+      "framework": "Motion fit",
+      "skillIds": [
+        "sk_product-strategy",
+        "sk_business-thinking"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_021",
+      "prompt": "What is the north star metric for a B2B workflow product, and why?",
+      "track": "metrics",
+      "difficulty": 3,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-17",
+      "confidence": 3,
+      "score": 5,
+      "scoreHistory": [
+        {
+          "date": "2026-07-17",
+          "score": 5
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Run the full chain from the audit: north star → inputs → leading indicators → experiment metrics → business metrics → guardrails → long-term effects.",
+      "framework": "Metric tree",
+      "skillIds": [
+        "sk_metrics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_022",
+      "prompt": "Daily active users dropped 8% week over week. Diagnose it.",
+      "track": "metrics",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "First rule out instrumentation. Then segment by platform, geography, cohort and version until the drop localises. Never guess before segmenting.",
+      "framework": "Segment → Isolate → Verify",
+      "skillIds": [
+        "sk_metrics",
+        "sk_analytics"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_023",
+      "prompt": "How would you measure the success of a search feature?",
+      "track": "metrics",
+      "difficulty": 3,
+      "company": "Google",
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Success is task completion, not engagement. More searches per session is often a failure signal. Name that inversion explicitly.",
+      "framework": "Metric tree",
+      "skillIds": [
+        "sk_metrics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_024",
+      "prompt": "Define activation for a product like Notion.",
+      "track": "metrics",
+      "difficulty": 3,
+      "company": "Notion",
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Find the behaviour that correlates with week-four retention, then define activation as reaching it. Show the correlation, do not assert it.",
+      "framework": "Activation",
+      "skillIds": [
+        "sk_metrics",
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_025",
+      "prompt": "What guardrail metrics would you set for a growth experiment?",
+      "track": "metrics",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Protect the thing the primary metric can cannibalise: unsubscribe rate, support volume, latency, downstream retention.",
+      "framework": "Guardrails",
+      "skillIds": [
+        "sk_metrics",
+        "sk_experimentation"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_026",
+      "prompt": "Your north star is going up but revenue is flat. What is happening?",
+      "track": "metrics",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "The north star is not causally connected to revenue, or the gain is in a segment that does not pay. Decompose by segment.",
+      "framework": "Decomposition",
+      "skillIds": [
+        "sk_metrics",
+        "sk_business-thinking"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_027",
+      "prompt": "How do you measure something that takes a year to show up?",
+      "track": "metrics",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Find a leading indicator with an established relationship to the long-term outcome, and be honest about the strength of that relationship.",
+      "framework": "Leading indicators",
+      "skillIds": [
+        "sk_metrics"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_028",
+      "prompt": "Write a SQL query to find the D7 retention rate by signup cohort.",
+      "track": "analytics",
+      "difficulty": 4,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-24",
+      "confidence": 3,
+      "score": 6,
+      "scoreHistory": [
+        {
+          "date": "2026-07-24",
+          "score": 6
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Self-join or window function on the events table, cohort by signup week, count distinct users active in day 7 over cohort size. Say the plan before typing.",
+      "framework": "SQL",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "starred": true
+    },
+    {
+      "id": "q_029",
+      "prompt": "Write a query to find users who did A but not B within 30 days.",
+      "track": "analytics",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "LEFT JOIN with a NULL check, or NOT EXISTS. Watch the time window boundary and be explicit about inclusive/exclusive.",
+      "framework": "SQL",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_030",
+      "prompt": "How would you find the biggest drop-off in a five-step funnel?",
+      "track": "analytics",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Ordered event sequence, count distinct users per step, then the step-to-step conversion. Segment before concluding.",
+      "framework": "SQL + funnel",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_031",
+      "prompt": "A dashboard shows conversion up 40% overnight. What do you check first?",
+      "track": "analytics",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Instrumentation, always. Tracking change, deploy, bot traffic, timezone boundary, duplicate events. Believe the pipeline last.",
+      "framework": "Data quality",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_032",
+      "prompt": "Explain the difference between a cohort analysis and a funnel analysis.",
+      "track": "analytics",
+      "difficulty": 2,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Funnels measure a sequence within a session or window; cohorts measure a group over time. They answer different questions and are constantly confused.",
+      "framework": "Concepts",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_033",
+      "prompt": "How would you use a window function to find each user's first purchase?",
+      "track": "analytics",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY purchased_at), filter to 1. Know why this beats a self-join on MIN.",
+      "framework": "SQL",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_034",
+      "prompt": "How many PMs are there in the world?",
+      "track": "estimation",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Two independent paths — global knowledge-worker population, and software companies × PMs per company — then reconcile the gap out loud.",
+      "framework": "Top-down + bottom-up",
+      "skillIds": [
+        "sk_business-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_035",
+      "prompt": "Estimate the annual revenue of Slack.",
+      "track": "estimation",
+      "difficulty": 4,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-16",
+      "confidence": 3,
+      "score": 7,
+      "scoreHistory": [
+        {
+          "date": "2026-07-16",
+          "score": 7
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Paid seats × ARPU, sanity-checked against known enterprise counts. State every assumption as you make it.",
+      "framework": "Bottom-up",
+      "skillIds": [
+        "sk_business-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_036",
+      "prompt": "How much storage does YouTube need per day?",
+      "track": "estimation",
+      "difficulty": 4,
+      "company": "Google",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Hours uploaded per minute × bitrate × transcoding multiplier. The transcoding multiplier is the part people forget.",
+      "framework": "Bottom-up",
+      "skillIds": [
+        "sk_technical-depth",
+        "sk_business-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_037",
+      "prompt": "Estimate the market size for AI writing tools.",
+      "track": "estimation",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Knowledge workers × willingness to pay × addressable fraction. Be explicit that TAM is a story and SOM is a plan.",
+      "framework": "TAM/SAM/SOM",
+      "skillIds": [
+        "sk_business-thinking",
+        "sk_product-strategy"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_038",
+      "prompt": "How many support tickets would a 10,000-seat enterprise generate monthly?",
+      "track": "estimation",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Your domain. Seats × active fraction × tickets per active user, adjusted for product maturity. Use real numbers you know.",
+      "framework": "Bottom-up",
+      "skillIds": [
+        "sk_business-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_039",
+      "prompt": "Tell me about a time you led without authority.",
+      "track": "leadership",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "The audit says you repeatedly move outside your job description. Pick the strongest instance and put a number in the result.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_leadership"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_040",
+      "prompt": "How do you handle an engineer who disagrees with the roadmap?",
+      "track": "leadership",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Separate the disagreement about facts from the disagreement about priority. Engineers are usually right about the first.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_leadership",
+        "sk_stakeholder-management"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_041",
+      "prompt": "Describe a process you created that others adopted.",
+      "track": "leadership",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Your documentation-standards work. Result must include adoption — how many teams, over what period.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_leadership"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_042",
+      "prompt": "How would you onboard a junior PM?",
+      "track": "leadership",
+      "difficulty": 3,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-23",
+      "confidence": 3,
+      "score": 5,
+      "scoreHistory": [
+        {
+          "date": "2026-07-23",
+          "score": 5
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Thirty/sixty/ninety with explicit competency milestones. Addresses the \"has not led PMs\" gap directly.",
+      "framework": "Structure",
+      "skillIds": [
+        "sk_leadership"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_043",
+      "prompt": "Tell me about a time you had to deliver bad news to leadership.",
+      "track": "leadership",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Early, with options, and owning the part that was yours. The recovery is the story, not the failure.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_leadership",
+        "sk_communication"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_044",
+      "prompt": "Tell me about your biggest professional failure.",
+      "track": "behavioral",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "A real failure with a real cost, and a specific behaviour change afterwards that you can point to. Not a disguised success.",
+      "framework": "DIGS / STAR",
+      "skillIds": [
+        "sk_communication"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_045",
+      "prompt": "Describe a time you changed your mind based on data.",
+      "track": "behavioral",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Doubles as evidence against the \"avoids analytics\" weakness. Choose an example where the data contradicted your instinct.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_communication",
+        "sk_analytics"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_046",
+      "prompt": "Tell me about a conflict with a stakeholder.",
+      "track": "behavioral",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Stakeholder Management is your 8.8. Show the disagreement and the mechanism that resolved it, not just that it ended well.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_stakeholder-management"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_047",
+      "prompt": "Why do you want to leave your current role?",
+      "track": "behavioral",
+      "difficulty": 2,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Scale and scope, framed as what you want to learn next. Never a complaint about the current employer.",
+      "framework": "Forward-looking",
+      "skillIds": [
+        "sk_communication"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_048",
+      "prompt": "What is your greatest weakness?",
+      "track": "behavioral",
+      "difficulty": 3,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Analytics and experimentation, with the specific work you have done about it. The remediation is what makes the answer land.",
+      "framework": "Honest + remediated",
+      "skillIds": [
+        "sk_communication"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_049",
+      "prompt": "Tell me about a decision you made with insufficient data.",
+      "track": "behavioral",
+      "difficulty": 3,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-15",
+      "confidence": 3,
+      "score": 6,
+      "scoreHistory": [
+        {
+          "date": "2026-07-15",
+          "score": 6
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "What you did to reduce the uncertainty cheaply, what you decided, and what you set up to learn quickly if you were wrong.",
+      "framework": "STAR",
+      "skillIds": [
+        "sk_communication",
+        "sk_product-sense"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_050",
+      "prompt": "Why this company?",
+      "track": "behavioral",
+      "difficulty": 2,
+      "practiceCount": 0,
+      "confidence": 2,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Something only true of them. Requires actual research, and interviewers can tell within one sentence whether you did it.",
+      "framework": "Specificity",
+      "skillIds": [
+        "sk_communication"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_051",
+      "prompt": "Design the data model for a project-management tool.",
+      "track": "system-design",
+      "difficulty": 4,
+      "company": "Atlassian",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Entities, relationships, and the constraints that make the product opinionated. Your Systems Thinking 9.5 should be visible here.",
+      "framework": "Entities → Relations → Constraints",
+      "skillIds": [
+        "sk_systems-thinking",
+        "sk_technical-depth"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_052",
+      "prompt": "How would you design an API for a payments product?",
+      "track": "system-design",
+      "difficulty": 5,
+      "company": "Stripe",
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Resource model, idempotency keys, versioning, error taxonomy, pagination, webhooks. Idempotency is the answer they are listening for.",
+      "framework": "API design",
+      "skillIds": [
+        "sk_technical-depth",
+        "sk_systems-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_053",
+      "prompt": "Design a notification system that does not annoy users.",
+      "track": "system-design",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Both a delivery architecture and a preference model. The interesting design is the aggregation and rate-limiting logic.",
+      "framework": "System + product",
+      "skillIds": [
+        "sk_systems-thinking",
+        "sk_ux"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_054",
+      "prompt": "How would you architect a multi-tenant SaaS product?",
+      "track": "system-design",
+      "difficulty": 5,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Shared schema vs schema-per-tenant vs database-per-tenant, and how the choice determines what you can promise enterprises.",
+      "framework": "Tenancy models",
+      "skillIds": [
+        "sk_technical-depth",
+        "sk_systems-thinking"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_055",
+      "prompt": "Design an offline-capable mobile app for field workers.",
+      "track": "system-design",
+      "difficulty": 4,
+      "practiceCount": 0,
+      "confidence": 1,
+      "scoreHistory": [],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Your actual domain. Conflict resolution strategy is the hard part — say what you do when two workers edit the same record offline.",
+      "framework": "Sync architecture",
+      "skillIds": [
+        "sk_systems-thinking",
+        "sk_technical-depth"
+      ],
+      "starred": false
+    },
+    {
+      "id": "q_056",
+      "prompt": "How would you design a feature-flag and experimentation platform?",
+      "track": "system-design",
+      "difficulty": 5,
+      "practiceCount": 1,
+      "lastAttempt": "2026-07-22",
+      "confidence": 3,
+      "score": 7,
+      "scoreHistory": [
+        {
+          "date": "2026-07-22",
+          "score": 7
+        }
+      ],
+      "notes": "",
+      "feedback": "",
+      "idealAnswer": "Assignment, consistency, overlapping experiments, metric pipeline. Directly relevant to closing the experimentation gap.",
+      "framework": "Platform design",
+      "skillIds": [
+        "sk_experimentation",
+        "sk_technical-depth"
+      ],
+      "starred": false
+    }
+  ],
+  "mocks": [
+    {
+      "id": "mock_001",
+      "date": "2026-07-19",
+      "track": "metrics",
+      "partner": "Peer PM (B2B SaaS)",
+      "durationMinutes": 45,
+      "score": 5,
+      "strengths": "Structured the metric tree cleanly and defended the north star choice.",
+      "improvements": "Could not define activation without hedging, and did not name a single guardrail unprompted. Guardrails should be automatic.",
+      "questionIds": [],
+      "notes": "Confirms the audit: metric thinking exists but is not fluent yet."
+    },
+    {
+      "id": "mock_002",
+      "date": "2026-07-26",
+      "track": "analytics",
+      "partner": "Data analyst friend",
+      "durationMinutes": 40,
+      "score": 6,
+      "strengths": "Wrote a working retention query. Explained the plan before typing, which read well.",
+      "improvements": "Needed a hint on the window function. Speed is the gap, not comprehension — drill until it is automatic.",
+      "questionIds": [],
+      "notes": "Up one point on the SQL portion versus two weeks ago. The drilling is working."
+    }
+  ]
+}

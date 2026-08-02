@@ -1,0 +1,323 @@
+{
+  "positioning": "Enterprise SaaS Product Manager specializing in complex workflows, UX systems, AI-enabled products, and scalable product execution.",
+  "headline": "Senior Product Manager | B2B SaaS | Enterprise UX | AI Products | Product Strategy | Systems Thinking",
+  "aboutThemes": [
+    "Systems over features.",
+    "Complex enterprise product design.",
+    "Product quality and maintainability.",
+    "AI in enterprise software.",
+    "Lessons from real product work."
+  ],
+  "weeklyCadence": [
+    {
+      "label": "Deep-dive article",
+      "target": 1,
+      "unit": "per week"
+    },
+    {
+      "label": "Shorter posts (lessons, frameworks, observations)",
+      "target": 2,
+      "unit": "per week"
+    },
+    {
+      "label": "Thoughtful comments on posts by recognised PMs",
+      "target": 25,
+      "unit": "per week"
+    },
+    {
+      "label": "Personalised connection requests to PMs, Directors, recruiters",
+      "target": 10,
+      "unit": "per week"
+    }
+  ],
+  "snapshots": [
+    {
+      "date": "2026-07-01",
+      "followers": 1180,
+      "connections": 940,
+      "impressions": 620,
+      "profileViews": 24,
+      "searchAppearances": 11,
+      "posts": 0,
+      "comments": 2
+    },
+    {
+      "date": "2026-07-08",
+      "followers": 1213,
+      "connections": 958,
+      "impressions": 3264,
+      "profileViews": 89,
+      "searchAppearances": 36,
+      "posts": 2,
+      "comments": 12
+    },
+    {
+      "date": "2026-07-15",
+      "followers": 1239,
+      "connections": 983,
+      "impressions": 2341,
+      "profileViews": 61,
+      "searchAppearances": 50,
+      "posts": 1,
+      "comments": 26
+    },
+    {
+      "date": "2026-07-22",
+      "followers": 1262,
+      "connections": 1004,
+      "impressions": 2748,
+      "profileViews": 61,
+      "searchAppearances": 42,
+      "posts": 2,
+      "comments": 19
+    },
+    {
+      "date": "2026-07-29",
+      "followers": 1287,
+      "connections": 1024,
+      "impressions": 1969,
+      "profileViews": 84,
+      "searchAppearances": 23,
+      "posts": 3,
+      "comments": 27
+    }
+  ],
+  "ideas": [
+    {
+      "id": "idea_the-metric-tree-i-wish-i-had-built-two-years-ago",
+      "title": "The metric tree I wish I had built two years ago",
+      "angle": "Lead with the dashboard nobody opened",
+      "theme": "Systems over features",
+      "format": "deep-dive",
+      "status": "drafting",
+      "scheduledFor": "2026-08-03",
+      "skillIds": [
+        "sk_metrics"
+      ],
+      "order": 0
+    },
+    {
+      "id": "idea_permissions-are-a-product-not-a-setting",
+      "title": "Permissions are a product, not a setting",
+      "angle": "Why RBAC always breaks at scale",
+      "theme": "Complex enterprise product design",
+      "format": "article",
+      "status": "idea",
+      "skillIds": [
+        "sk_ux",
+        "sk_systems-thinking"
+      ],
+      "order": 1
+    },
+    {
+      "id": "idea_three-things-i-got-wrong-about-offline-first-design",
+      "title": "Three things I got wrong about offline-first design",
+      "angle": "Conflict resolution is a product decision",
+      "theme": "Lessons from real product work",
+      "format": "short-post",
+      "status": "idea",
+      "skillIds": [
+        "sk_systems-thinking"
+      ],
+      "order": 2
+    },
+    {
+      "id": "idea_what-sql-taught-me-about-my-own-product-thinking",
+      "title": "What SQL taught me about my own product thinking",
+      "angle": "I had been asking questions I could not answer",
+      "theme": "Lessons from real product work",
+      "format": "short-post",
+      "status": "idea",
+      "skillIds": [
+        "sk_analytics"
+      ],
+      "order": 3
+    },
+    {
+      "id": "idea_reading-a-products-data-model-from-the-outside",
+      "title": "Reading a product's data model from the outside",
+      "angle": "Linear teardown",
+      "theme": "Systems over features",
+      "format": "teardown",
+      "status": "idea",
+      "skillIds": [
+        "sk_systems-thinking",
+        "sk_product-sense"
+      ],
+      "order": 4
+    },
+    {
+      "id": "idea_the-exception-that-was-the-same-exception-nine-times",
+      "title": "The exception that was the same exception nine times",
+      "angle": "Workflow redesign story",
+      "theme": "Complex enterprise product design",
+      "format": "deep-dive",
+      "status": "idea",
+      "skillIds": [
+        "sk_ux"
+      ],
+      "order": 5
+    },
+    {
+      "id": "idea_evaluating-an-llm-feature-without-vibes",
+      "title": "Evaluating an LLM feature without vibes",
+      "angle": "50 cases, four dimensions, one rubric",
+      "theme": "AI in enterprise software",
+      "format": "deep-dive",
+      "status": "idea",
+      "skillIds": [
+        "sk_ai-product-knowledge"
+      ],
+      "order": 6
+    },
+    {
+      "id": "idea_why-your-enterprise-product-needs-fewer-settings",
+      "title": "Why your enterprise product needs fewer settings",
+      "angle": "Configurability is a tax on everyone",
+      "theme": "Product quality and maintainability",
+      "format": "short-post",
+      "status": "idea",
+      "skillIds": [
+        "sk_ux",
+        "sk_product-sense"
+      ],
+      "order": 7
+    },
+    {
+      "id": "idea_the-guardrail-metric-nobody-set",
+      "title": "The guardrail metric nobody set",
+      "angle": "A growth win that cost more than it made",
+      "theme": "Systems over features",
+      "format": "short-post",
+      "status": "idea",
+      "skillIds": [
+        "sk_metrics",
+        "sk_experimentation"
+      ],
+      "order": 8
+    },
+    {
+      "id": "idea_documentation-is-a-scaling-mechanism-not-overhead",
+      "title": "Documentation is a scaling mechanism, not overhead",
+      "angle": "What changed when we standardised PRDs",
+      "theme": "Product quality and maintainability",
+      "format": "article",
+      "status": "idea",
+      "skillIds": [
+        "sk_communication",
+        "sk_leadership"
+      ],
+      "order": 9
+    },
+    {
+      "id": "idea_ai-in-enterprise-software-what-actually-ships",
+      "title": "AI in enterprise software: what actually ships",
+      "angle": "Retrieval quality beats model choice",
+      "theme": "AI in enterprise software",
+      "format": "deep-dive",
+      "status": "idea",
+      "skillIds": [
+        "sk_ai-product-knowledge"
+      ],
+      "order": 10
+    },
+    {
+      "id": "idea_i-stopped-estimating-and-started-sizing-risk",
+      "title": "I stopped estimating and started sizing risk",
+      "angle": "A change in how I plan",
+      "theme": "Lessons from real product work",
+      "format": "short-post",
+      "status": "idea",
+      "skillIds": [
+        "sk_product-execution"
+      ],
+      "order": 11
+    }
+  ],
+  "monthlyGoals": [
+    {
+      "month": "2026-07",
+      "followers": 1360,
+      "posts": 6,
+      "comments": 50,
+      "connections": 1020
+    },
+    {
+      "month": "2026-08",
+      "followers": 1540,
+      "posts": 6,
+      "comments": 50,
+      "connections": 1100
+    },
+    {
+      "month": "2026-09",
+      "followers": 1720,
+      "posts": 6,
+      "comments": 50,
+      "connections": 1180
+    },
+    {
+      "month": "2026-10",
+      "followers": 1900,
+      "posts": 6,
+      "comments": 50,
+      "connections": 1260
+    },
+    {
+      "month": "2026-11",
+      "followers": 2080,
+      "posts": 6,
+      "comments": 50,
+      "connections": 1340
+    },
+    {
+      "month": "2026-12",
+      "followers": 2260,
+      "posts": 6,
+      "comments": 50,
+      "connections": 1420
+    },
+    {
+      "month": "2027-01",
+      "followers": 2440,
+      "posts": 12,
+      "comments": 100,
+      "connections": 1500
+    },
+    {
+      "month": "2027-02",
+      "followers": 2620,
+      "posts": 12,
+      "comments": 100,
+      "connections": 1580
+    },
+    {
+      "month": "2027-03",
+      "followers": 2800,
+      "posts": 12,
+      "comments": 100,
+      "connections": 1660
+    },
+    {
+      "month": "2027-04",
+      "followers": 2980,
+      "posts": 12,
+      "comments": 100,
+      "connections": 1740
+    },
+    {
+      "month": "2027-05",
+      "followers": 3160,
+      "posts": 12,
+      "comments": 100,
+      "connections": 1820
+    },
+    {
+      "month": "2027-06",
+      "followers": 3340,
+      "posts": 12,
+      "comments": 100,
+      "connections": 1900
+    }
+  ]
+}

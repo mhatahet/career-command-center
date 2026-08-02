@@ -1,0 +1,281 @@
+/* ============================================================================
+   Charts
+   ----------------------------------------------------------------------------
+   Hand-rolled SVG rather than a charting library: two dependencies total, every
+   mark inherits theme tokens, and there is no runtime that needs its own
+   theming layer.
+   ========================================================================= */
+
+.chart {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+.chart-wrap {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Grid + axes */
+.chart__grid line {
+  stroke: var(--grid-line);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.chart__axis line {
+  stroke: var(--grid-line-strong);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.chart__label {
+  font-size: 10px;
+  fill: var(--text-quaternary);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-sans);
+}
+
+.chart__label--axis {
+  fill: var(--text-tertiary);
+}
+
+.chart__label--strong {
+  fill: var(--text-secondary);
+  font-weight: var(--weight-medium);
+}
+
+/* Lines */
+.chart__line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart__line--dashed {
+  stroke-dasharray: 4 4;
+  stroke-width: 1.5;
+}
+
+.chart__area {
+  stroke: none;
+}
+
+.chart__dot {
+  stroke: var(--bg-base);
+  stroke-width: 2;
+  transition: r var(--dur-fast) var(--ease-out);
+}
+
+.chart__dot--hover {
+  r: 5;
+}
+
+/* Bars */
+.chart__bar {
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    y var(--dur-base) var(--ease-out),
+    height var(--dur-base) var(--ease-out);
+}
+
+.chart__bar:hover {
+  opacity: 0.82;
+}
+
+/* Radar */
+.chart__radar-grid {
+  fill: none;
+  stroke: var(--grid-line);
+  stroke-width: 1;
+}
+
+.chart__radar-spoke {
+  stroke: var(--grid-line);
+  stroke-width: 1;
+}
+
+.chart__radar-shape {
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.chart__radar-label {
+  font-size: 10px;
+  fill: var(--text-tertiary);
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+}
+
+.chart__radar-label--weak {
+  fill: var(--danger-text);
+}
+
+/* Heat map / activity calendar */
+.heat-cell {
+  rx: 2;
+  transition: transform var(--dur-fast) var(--ease-out);
+  cursor: default;
+}
+
+.heat-cell:hover {
+  stroke: var(--text-tertiary);
+  stroke-width: 1;
+}
+
+.heat-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-2xs);
+  color: var(--text-quaternary);
+}
+
+.heat-legend__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+/* Donut */
+.chart__donut-segment {
+  transition: opacity var(--dur-fast) var(--ease-out);
+  cursor: default;
+}
+
+.chart__donut-segment:hover {
+  opacity: 0.82;
+}
+
+/* Legend */
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.chart-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.chart-legend__swatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.chart-legend__swatch--line {
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.chart-legend__value {
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Shared hover tooltip for charts */
+.chart-tip {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  margin-top: -8px;
+  animation: fade-in var(--dur-instant) var(--ease-out);
+}
+
+.chart-tip__title {
+  font-weight: var(--weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.chart-tip__row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-tip__swatch {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+}
+
+/* Hover guide line */
+.chart__guide {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  pointer-events: none;
+}
+
+/* Burndown */
+.chart__burn-ideal {
+  stroke: var(--text-quaternary);
+  stroke-dasharray: 5 4;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+/* Bullet chart (score vs target) */
+.bullet {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.bullet__track {
+  position: relative;
+  flex: 1;
+  height: 8px;
+  background: var(--track);
+  border-radius: var(--radius-full);
+  min-width: 60px;
+}
+
+.bullet__fill {
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  border-radius: var(--radius-full);
+  transition: width var(--dur-slow) var(--ease-out);
+}
+
+.bullet__baseline {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  background: var(--text-quaternary);
+  border-radius: 1px;
+}
+
+.bullet__target {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  background: var(--text-secondary);
+  border-radius: 1px;
+}

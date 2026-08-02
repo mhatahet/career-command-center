@@ -1,0 +1,248 @@
+{
+  "applications": [],
+  "targetCompanies": [
+    {
+      "id": "co_google",
+      "name": "Google",
+      "tier": 1,
+      "note": "L5 PM. Demands exceptional evidence in strategy, metrics, experimentation and scale. Expects deeper technical fluency than you currently demonstrate.",
+      "fit": 62,
+      "watching": false
+    },
+    {
+      "id": "co_microsoft",
+      "name": "Microsoft",
+      "tier": 1,
+      "note": "Senior PM. The most reachable Tier 1 for an enterprise SaaS profile — your systems and workflow depth maps directly onto their portfolio.",
+      "fit": 74,
+      "watching": false
+    },
+    {
+      "id": "co_atlassian",
+      "name": "Atlassian",
+      "tier": 1,
+      "note": "Senior PM. Strong thematic fit: workflow software, complex permissions, enterprise admin. Interviews hard on craft and on writing.",
+      "fit": 78,
+      "watching": false
+    },
+    {
+      "id": "co_shopify",
+      "name": "Shopify",
+      "tier": 1,
+      "note": "Senior PM. High bar on commercial thinking and speed. Merchant-operations parallels your retail-execution background.",
+      "fit": 66,
+      "watching": false
+    },
+    {
+      "id": "co_stripe",
+      "name": "Stripe",
+      "tier": 1,
+      "note": "PM. Interviews on API and platform reasoning directly. Highest technical bar on this list; also the strongest writing culture.",
+      "fit": 58,
+      "watching": false
+    },
+    {
+      "id": "co_canva",
+      "name": "Canva",
+      "tier": 1,
+      "note": "Senior PM. Consumer-adjacent craft and design sensibility. Your UX 8.8 helps; the consumer gap hurts.",
+      "fit": 64,
+      "watching": false
+    },
+    {
+      "id": "co_miro",
+      "name": "Miro",
+      "tier": 1,
+      "note": "Senior PM. Collaboration and canvas products. Systems thinking is directly relevant to their extensibility platform.",
+      "fit": 70,
+      "watching": false
+    },
+    {
+      "id": "co_gitlab",
+      "name": "GitLab",
+      "tier": 2,
+      "note": "All-remote, radically transparent, and documentation is a first-class artefact. Possibly the single best cultural fit on the entire list.",
+      "fit": 88,
+      "watching": true
+    },
+    {
+      "id": "co_github",
+      "name": "GitHub",
+      "tier": 2,
+      "note": "Developer products at scale. Requires the technical-depth work, but the platform thinking transfers cleanly.",
+      "fit": 80,
+      "watching": true
+    },
+    {
+      "id": "co_mongodb",
+      "name": "MongoDB",
+      "tier": 2,
+      "note": "Developer and data infrastructure. Strong fit once the data-architecture gap closes.",
+      "fit": 76,
+      "watching": false
+    },
+    {
+      "id": "co_datadog",
+      "name": "Datadog",
+      "tier": 2,
+      "note": "Observability. Complex enterprise UX with genuinely high information density — squarely your strength.",
+      "fit": 82,
+      "watching": true
+    },
+    {
+      "id": "co_okta",
+      "name": "Okta",
+      "tier": 2,
+      "note": "Identity and permissions. Your permissions and workflow depth is unusually directly relevant here.",
+      "fit": 85,
+      "watching": true
+    },
+    {
+      "id": "co_elastic",
+      "name": "Elastic",
+      "tier": 2,
+      "note": "Search and observability, all-remote. Technical products with enterprise buyers.",
+      "fit": 78,
+      "watching": false
+    },
+    {
+      "id": "co_intercom",
+      "name": "Intercom",
+      "tier": 2,
+      "note": "Customer communication with a serious AI product line. Good match for the AI PM work in month 5.",
+      "fit": 80,
+      "watching": true
+    },
+    {
+      "id": "co_zapier",
+      "name": "Zapier",
+      "tier": 2,
+      "note": "All-remote, workflow automation. Integration and workflow thinking is exactly your systems background.",
+      "fit": 86,
+      "watching": true
+    },
+    {
+      "id": "co_monday-com",
+      "name": "monday.com",
+      "tier": 2,
+      "note": "Work OS. Workflow, permissions, admin surfaces — near-identical problem space to your current role.",
+      "fit": 84,
+      "watching": true
+    },
+    {
+      "id": "co_hubspot",
+      "name": "HubSpot",
+      "tier": 2,
+      "note": "CRM platform. Strong PLG motion, which is a gap you would close on the job.",
+      "fit": 76,
+      "watching": false
+    },
+    {
+      "id": "co_cloudflare",
+      "name": "Cloudflare",
+      "tier": 2,
+      "note": "Infrastructure and developer products. Highest technical bar in Tier 2.",
+      "fit": 68,
+      "watching": false
+    },
+    {
+      "id": "co_remote-b2b-saas-series-b-d",
+      "name": "Remote B2B SaaS (Series B–D)",
+      "tier": 3,
+      "note": "Stepping stone that supplies international experience and quantified impact for the next application round.",
+      "fit": 90,
+      "watching": true
+    },
+    {
+      "id": "co_erp-logistics-vendors",
+      "name": "ERP / Logistics vendors",
+      "tier": 3,
+      "note": "Direct domain match. Fastest route to a senior title with international scope.",
+      "fit": 88,
+      "watching": true
+    },
+    {
+      "id": "co_field-operations-supply-chain-tech",
+      "name": "Field operations / Supply chain tech",
+      "tier": 3,
+      "note": "Your exact background. Likely to interview well with minimal preparation.",
+      "fit": 92,
+      "watching": true
+    },
+    {
+      "id": "co_crm-hr-tech",
+      "name": "CRM / HR tech",
+      "tier": 3,
+      "note": "Adjacent workflow software with transferable systems thinking.",
+      "fit": 82,
+      "watching": true
+    },
+    {
+      "id": "co_retail-execution-vendors",
+      "name": "Retail execution vendors",
+      "tier": 3,
+      "note": "Precisely your current domain. Strong immediate fit, lower long-term ceiling.",
+      "fit": 90,
+      "watching": true
+    },
+    {
+      "id": "co_regional-unicorns-expanding-globally",
+      "name": "Regional unicorns expanding globally",
+      "tier": 3,
+      "note": "International exposure without relocation. Good bridge role.",
+      "fit": 84,
+      "watching": true
+    }
+  ],
+  "compensation": [
+    {
+      "region": "Jordan",
+      "todayLow": 30000,
+      "todayHigh": 50000,
+      "targetLow": 50000,
+      "targetHigh": 80000
+    },
+    {
+      "region": "GCC",
+      "todayLow": 60000,
+      "todayHigh": 100000,
+      "targetLow": 100000,
+      "targetHigh": 180000
+    },
+    {
+      "region": "Europe",
+      "todayLow": 80000,
+      "todayHigh": 130000,
+      "targetLow": 130000,
+      "targetHigh": 200000
+    },
+    {
+      "region": "UK",
+      "todayLow": 90000,
+      "todayHigh": 150000,
+      "targetLow": 150000,
+      "targetHigh": 250000
+    },
+    {
+      "region": "Canada",
+      "todayLow": 110000,
+      "todayHigh": 170000,
+      "targetLow": 170000,
+      "targetHigh": 260000
+    },
+    {
+      "region": "USA",
+      "todayLow": 150000,
+      "todayHigh": 220000,
+      "targetLow": 250000,
+      "targetHigh": 450000
+    },
+    {
+      "region": "Fully Remote",
+      "todayLow": 80000,
+      "todayHigh": 180000,
+      "targetLow": 180000,
+      "targetHigh": 300000
+    }
+  ]
+}

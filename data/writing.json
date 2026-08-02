@@ -1,0 +1,263 @@
+[
+  {
+    "id": "wr_the-metric-tree-i-wish-i-had-built-two-years-ago",
+    "title": "The Metric Tree I Wish I Had Built Two Years Ago",
+    "kind": "article",
+    "status": "drafting",
+    "words": 640,
+    "targetWords": 1800,
+    "topics": [
+      "Metrics",
+      "Enterprise SaaS"
+    ],
+    "skillIds": [
+      "sk_metrics",
+      "sk_communication"
+    ],
+    "outline": "1. The dashboard everyone ignored\n2. Why output metrics do not direct a team\n3. The chain: north star → inputs → leading → guardrails\n4. What changed when we rebuilt it\n5. The tree, in full",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2026-07-31",
+    "xp": 300,
+    "order": 0
+  },
+  {
+    "id": "wr_what-a-public-dataset-told-me-about-onboarding",
+    "title": "What a Public Dataset Told Me About Onboarding",
+    "kind": "case-study",
+    "status": "outlining",
+    "words": 0,
+    "targetWords": 2400,
+    "topics": [
+      "Analytics",
+      "Onboarding"
+    ],
+    "skillIds": [
+      "sk_analytics",
+      "sk_metrics"
+    ],
+    "outline": "Funnel → the drop nobody looks at → retention split → three recommendations with sizes",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2026-08-31",
+    "xp": 300,
+    "order": 1
+  },
+  {
+    "id": "wr_ten-experiments-i-designed-and-what-each-would-have-taught-us",
+    "title": "Ten Experiments I Designed, and What Each Would Have Taught Us",
+    "kind": "article",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2200,
+    "topics": [
+      "Experimentation"
+    ],
+    "skillIds": [
+      "sk_experimentation"
+    ],
+    "outline": "One section per plan: hypothesis, metric, MDE, what a null result would mean",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2026-09-30",
+    "xp": 300,
+    "order": 2
+  },
+  {
+    "id": "wr_systems-over-features-reading-a-products-data-model-from-the-out",
+    "title": "Systems Over Features: Reading a Product's Data Model From the Outside",
+    "kind": "teardown",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2000,
+    "topics": [
+      "Systems Thinking",
+      "Product Sense"
+    ],
+    "skillIds": [
+      "sk_systems-thinking",
+      "sk_product-sense"
+    ],
+    "outline": "Take Linear. Infer the schema from the UI. Show what the constraints buy.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2026-10-31",
+    "xp": 300,
+    "order": 3
+  },
+  {
+    "id": "wr_how-i-evaluated-an-llm-feature-without-vibes",
+    "title": "How I Evaluated an LLM Feature Without Vibes",
+    "kind": "article",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2600,
+    "topics": [
+      "AI Products",
+      "Evaluation"
+    ],
+    "skillIds": [
+      "sk_ai-product-knowledge",
+      "sk_metrics"
+    ],
+    "outline": "50 cases, four dimensions, one rubric. The adversarial cases that changed the design.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2026-11-30",
+    "xp": 300,
+    "order": 4
+  },
+  {
+    "id": "wr_redesigning-a-ten-year-old-workflow",
+    "title": "Redesigning a Ten-Year-Old Workflow",
+    "kind": "case-study",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 3200,
+    "topics": [
+      "Enterprise UX",
+      "Systems Thinking"
+    ],
+    "skillIds": [
+      "sk_ux",
+      "sk_systems-thinking"
+    ],
+    "outline": "The exceptions that were the same exception. The path I chose not to support.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2026-12-31",
+    "xp": 300,
+    "order": 5
+  },
+  {
+    "id": "wr_permissions-are-a-product-not-a-setting",
+    "title": "Permissions Are a Product, Not a Setting",
+    "kind": "article",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2000,
+    "topics": [
+      "Enterprise UX",
+      "Complex Workflows"
+    ],
+    "skillIds": [
+      "sk_ux",
+      "sk_systems-thinking"
+    ],
+    "outline": "Why RBAC breaks. What administrators actually want. The explicability principle.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2027-01-31",
+    "xp": 300,
+    "order": 6
+  },
+  {
+    "id": "wr_the-architecture-decision-that-was-actually-a-product-decision",
+    "title": "The Architecture Decision That Was Actually a Product Decision",
+    "kind": "article",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2200,
+    "topics": [
+      "Technical Depth",
+      "Systems Thinking"
+    ],
+    "skillIds": [
+      "sk_technical-depth",
+      "sk_systems-thinking"
+    ],
+    "outline": "Sync vs async, and how it determined what the product could promise users.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2027-02-28",
+    "xp": 300,
+    "order": 7
+  },
+  {
+    "id": "wr_pricing-an-ai-feature-when-your-cost-floor-moves",
+    "title": "Pricing an AI Feature When Your Cost Floor Moves",
+    "kind": "article",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2400,
+    "topics": [
+      "Pricing",
+      "AI Products"
+    ],
+    "skillIds": [
+      "sk_business-thinking",
+      "sk_ai-product-knowledge"
+    ],
+    "outline": "Metering units customers understand. Margin at three volume tiers. What breaks at 100×.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2027-03-31",
+    "xp": 300,
+    "order": 8
+  },
+  {
+    "id": "wr_where-your-growth-loop-actually-leaks",
+    "title": "Where Your Growth Loop Actually Leaks",
+    "kind": "article",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2200,
+    "topics": [
+      "Growth",
+      "Analytics"
+    ],
+    "skillIds": [
+      "sk_business-thinking",
+      "sk_analytics"
+    ],
+    "outline": "Model the loop. Find the step with real leverage. Size three interventions.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2027-04-30",
+    "xp": 300,
+    "order": 9
+  },
+  {
+    "id": "wr_what-25-mock-interviews-taught-me-about-my-own-blind-spots",
+    "title": "What 25 Mock Interviews Taught Me About My Own Blind Spots",
+    "kind": "essay",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 1800,
+    "topics": [
+      "Interviewing",
+      "Career"
+    ],
+    "skillIds": [
+      "sk_communication"
+    ],
+    "outline": "The repeating criticism. The round I kept avoiding. What actually moved the scores.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2027-05-31",
+    "xp": 300,
+    "order": 10
+  },
+  {
+    "id": "wr_applying-with-evidence-instead-of-experience",
+    "title": "Applying With Evidence Instead of Experience",
+    "kind": "essay",
+    "status": "idea",
+    "words": 0,
+    "targetWords": 2000,
+    "topics": [
+      "Career",
+      "Portfolio"
+    ],
+    "skillIds": [
+      "sk_communication",
+      "sk_business-thinking"
+    ],
+    "outline": "Twelve months of artefacts. What recruiters responded to and what they ignored.",
+    "draft": "",
+    "publication": "Personal site + LinkedIn",
+    "scheduledFor": "2027-06-30",
+    "xp": 300,
+    "order": 11
+  }
+]
