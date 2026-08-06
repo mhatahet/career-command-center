@@ -262,5 +262,32 @@
     "screenshots": [],
     "xp": 390,
     "order": 7
+  },
+  {
+    "id": "pf_msbg6hst1",
+    "title": "New portfolio project",
+    "kind": "ai-project",
+    "roiRank": 2,
+    "status": "not-started",
+    "completion": 0,
+    "publishStatus": "private",
+    "problem": "",
+    "goal": "",
+    "process": "",
+    "research": "",
+    "discovery": "",
+    "ux": "",
+    "metrics": "",
+    "tradeoffs": "",
+    "risks": "",
+    "businessImpact": "",
+    "lessons": "",
+    "skillIds": [],
+    "estimatedHours": 20,
+    "actualHours": 0,
+    "attachments": [],
+    "screenshots": [],
+    "xp": 300,
+    "order": 8
   }
 ]

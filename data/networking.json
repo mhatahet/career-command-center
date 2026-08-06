@@ -9,14 +9,20 @@
       "status": "in-conversation",
       "relationshipStrength": 4,
       "nextAction": "Send the analytics case study when it publishes; she offered to review it.",
-      "nextActionDate": "2026-07-28",
-      "lastContact": "2026-07-18",
+      "nextActionDate": "2026-08-16",
+      "lastContact": "2026-08-02",
       "touchpoints": [
         {
           "id": "ct_layla-haddad_tp1",
           "date": "2026-07-18",
           "kind": "call",
           "note": "Real conversation. Established what they care about and what I could offer."
+        },
+        {
+          "id": "tp_msbg8gk22",
+          "date": "2026-08-02",
+          "kind": "message",
+          "note": "Sent a message"
         }
       ],
       "couldRefer": true,
@@ -228,14 +234,20 @@
       "status": "warm",
       "relationshipStrength": 4,
       "nextAction": "Monthly catch-up. Ask him to pressure-test the strategy memo in month 9.",
-      "nextActionDate": "2026-07-29",
-      "lastContact": "2026-07-19",
+      "nextActionDate": "2026-08-16",
+      "lastContact": "2026-08-02",
       "touchpoints": [
         {
           "id": "ct_omar-khalil_tp1",
           "date": "2026-07-19",
           "kind": "call",
           "note": "Real conversation. Established what they care about and what I could offer."
+        },
+        {
+          "id": "tp_msbg8hym4",
+          "date": "2026-08-02",
+          "kind": "message",
+          "note": "Sent a message"
         }
       ],
       "couldRefer": true,

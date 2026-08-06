@@ -1,31 +1,41 @@
 /* ============================================================================
    Persistence
    ----------------------------------------------------------------------------
-   The requirement is that data lives in real JSON files in the project folder
-   and is read and written automatically. A browser page cannot do that alone,
-   so there are three adapters behind one interface, tried in order:
+   The requirement is that data lives in a real backing store and is read and
+   written automatically. A browser page cannot reach a filesystem or a
+   database on its own, so there are four adapters behind one interface,
+   tried in order:
 
-   1. `bridge`  — the Vite dev-server file bridge. Reads and writes
-                  `data/*.json` directly. Zero friction, no prompts. This is the
-                  adapter in use during `npm run dev`, which is the normal way
-                  to run the app.
+   1. `bridge`   — the Vite dev-server file bridge. Reads and writes
+                   `data/*.json` directly. Zero friction, no prompts. This is
+                   the adapter in use during `npm run dev`, which is the
+                   normal way to run the app locally.
 
-   2. `fsapi`   — the File System Access API. For a built, statically-hosted
-                  copy: the user picks the `data` folder once, the handle is kept
-                  in IndexedDB, and writes are automatic from then on. Chromium
-                  browsers only.
+   2. `supabase` — a Postgres table (`data_files`), one row per collection,
+                   reached over `supabase-js`. This is what a deployed copy
+                   uses once `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY`
+                   are set — see `supabaseClient.ts` and `auth.tsx`. Its
+                   Row-Level Security policies require a signed-in session,
+                   which `AuthGate` guarantees exists before this module is
+                   ever asked to load or save.
 
-   3. `local`   — localStorage. Always available, always written to as a mirror
-                  even when a better adapter is active, so a failed disk write
-                  can never lose work.
+   3. `fsapi`    — the File System Access API. For a built copy with no
+                   Supabase configured: the user picks the `data` folder
+                   once, the handle is kept in IndexedDB, and writes are
+                   automatic from then on. Chromium browsers only.
+
+   4. `local`    — localStorage. Always available, always written to as a
+                   mirror even when a better adapter is active, so a failed
+                   write can never lose work.
 
    Whichever adapter is active, localStorage is written too. That redundancy is
    the difference between "my data is in a file" and "my data was in a file".
    ========================================================================= */
 
+import { supabase, isSupabaseConfigured } from './supabaseClient'
 import { DATA_FILES, type DataFileKey } from './types'
 
-export type AdapterKind = 'bridge' | 'fsapi' | 'local'
+export type AdapterKind = 'bridge' | 'supabase' | 'fsapi' | 'local'
 
 export interface AdapterStatus {
   kind: AdapterKind
@@ -88,6 +98,32 @@ async function bridgeRead<T>(name: DataFileKey): Promise<T | null> {
   if (response.status === 404) return null
   if (!response.ok) throw new Error(`Bridge read failed for ${name}.json (${response.status})`)
   return (await response.json()) as T
+}
+
+/* ------------------------------------------------------ supabase adapter -- */
+
+const DATA_TABLE = 'data_files'
+
+/** True once a session was confirmed at `initPersistence()` time. */
+let supabaseReady = false
+
+async function detectSupabase(): Promise<boolean> {
+  if (!isSupabaseConfigured()) return false
+  const { data } = await supabase.auth.getSession()
+  return data.session != null
+}
+
+async function supabaseRead<T>(name: DataFileKey): Promise<T | null> {
+  const { data, error } = await supabase.from(DATA_TABLE).select('content').eq('name', name).maybeSingle()
+  if (error) throw new Error(`Supabase read failed for ${name} (${error.message})`)
+  return (data?.content as T | undefined) ?? null
+}
+
+async function supabaseWrite(name: DataFileKey, value: unknown): Promise<void> {
+  const { error } = await supabase
+    .from(DATA_TABLE)
+    .upsert({ name, content: value, updated_at: new Date().toISOString() }, { onConflict: 'name' })
+  if (error) throw new Error(`Supabase write failed for ${name} (${error.message})`)
 }
 
 async function bridgeWrite(name: DataFileKey, value: unknown): Promise<void> {
@@ -271,14 +307,25 @@ export async function initPersistence(): Promise<AdapterStatus> {
     return status()
   }
 
+  // `AuthGate` (see auth.tsx) only mounts the store once a session exists, so
+  // by the time this runs with Supabase configured, `detectSupabase()` finding
+  // no session would mean the session expired mid-load — fall through to
+  // fsapi/local rather than silently losing writes.
+  supabaseReady = await detectSupabase()
+  if (supabaseReady) {
+    activeKind = 'supabase'
+    return status()
+  }
+
   dirHandle = await restoreDirHandle()
   activeKind = dirHandle ? 'fsapi' : 'local'
   return status()
 }
 
-/** Re-evaluate after the user connects a folder. */
+/** Re-evaluate after the user connects a folder (or Supabase session changes). */
 export function refreshAdapter(): AdapterStatus {
   if (bridgeAvailable) activeKind = 'bridge'
+  else if (supabaseReady) activeKind = 'supabase'
   else activeKind = dirHandle ? 'fsapi' : 'local'
   return status()
 }
@@ -291,6 +338,15 @@ export function status(): AdapterStatus {
         label: 'Writing to /data',
         detail:
           'Every change is written straight to the JSON files in your project folder. Nothing to configure.',
+        writesToDisk: true,
+        canUpgrade: false,
+      }
+    case 'supabase':
+      return {
+        kind: 'supabase',
+        label: 'Writing to Supabase',
+        detail:
+          'Every change is written to your Supabase Postgres database over your authenticated session. Nothing to configure.',
         writesToDisk: true,
         canUpgrade: false,
       }
@@ -333,6 +389,13 @@ export async function loadFile<T>(name: DataFileKey): Promise<LoadResult<T>> {
     } catch {
       /* fall through to the mirror */
     }
+  } else if (activeKind === 'supabase') {
+    try {
+      const value = await supabaseRead<T>(name)
+      if (value !== null) return { value, source: 'supabase' }
+    } catch {
+      /* fall through to the mirror */
+    }
   } else if (activeKind === 'fsapi') {
     const value = await fsapiRead<T>(name)
     if (value !== null) return { value, source: 'fsapi' }
@@ -368,6 +431,10 @@ export async function saveFile(name: DataFileKey, value: unknown): Promise<SaveR
   try {
     if (activeKind === 'bridge') {
       await bridgeWrite(name, value)
+      return { name, persistedToDisk: true, mirrored }
+    }
+    if (activeKind === 'supabase') {
+      await supabaseWrite(name, value)
       return { name, persistedToDisk: true, mirrored }
     }
     if (activeKind === 'fsapi') {

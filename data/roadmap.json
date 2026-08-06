@@ -13,15 +13,15 @@
           "title": "Learn SQL to interview standard",
           "summary": "Go from reading SQL to writing it under time pressure.",
           "rationale": "The audit calls SQL non-negotiable and puts Analytics at 6.5/10 — the joint-lowest score with the highest weight. Nothing else on this roadmap unblocks as much.",
-          "status": "in-progress",
+          "status": "not-started",
           "tasks": [
             {
               "id": "tk_m01_001",
               "title": "Complete SQLBolt end to end",
               "description": "",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 6,
-              "actualHours": 6.3,
+              "actualHours": 0,
               "difficulty": 2,
               "xp": 85,
               "subtasks": [
@@ -64,9 +64,9 @@
               "id": "tk_m01_002",
               "title": "Complete the Mode Analytics SQL tutorial",
               "description": "",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 10,
-              "actualHours": 10.5,
+              "actualHours": 0,
               "difficulty": 3,
               "xp": 135,
               "subtasks": [
@@ -114,7 +114,7 @@
               "id": "tk_m01_003",
               "title": "Solve 50 interview-grade SQL questions",
               "description": "Target: any question answered in under 8 minutes, out loud, explaining the plan before typing.",
-              "status": "in-progress",
+              "status": "not-started",
               "estimatedHours": 18,
               "actualHours": 9.9,
               "difficulty": 4,
@@ -123,17 +123,17 @@
                 {
                   "id": "tk_m01_003_s1",
                   "title": "Questions 1–10: aggregation and grouping",
-                  "done": true
+                  "done": false
                 },
                 {
                   "id": "tk_m01_003_s2",
                   "title": "Questions 11–20: multi-table joins",
-                  "done": true
+                  "done": false
                 },
                 {
                   "id": "tk_m01_003_s3",
                   "title": "Questions 21–30: window functions and ranking",
-                  "done": true
+                  "done": false
                 },
                 {
                   "id": "tk_m01_003_s4",
@@ -262,15 +262,15 @@
           "title": "Build 5 KPI frameworks",
           "summary": "Construct and defend complete metric trees for five products you know.",
           "rationale": "Metrics sits at 6.8/10. The audit is explicit: your documentation is excellent but your metric thinking is not equally visible. A metric tree is the artefact that makes it visible.",
-          "status": "in-progress",
+          "status": "not-started",
           "tasks": [
             {
               "id": "tk_m01_006",
               "title": "Learn the metric-tree structure cold",
               "description": "This exact chain is quoted in the audit. Learn it as a checklist you can run in an interview without thinking.",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 4,
-              "actualHours": 4.2,
+              "actualHours": 0,
               "difficulty": 2,
               "xp": 65,
               "subtasks": [
@@ -323,9 +323,9 @@
               "id": "tk_m01_007",
               "title": "Framework 1 — your current product",
               "description": "",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 3,
-              "actualHours": 3.2,
+              "actualHours": 0,
               "difficulty": 3,
               "xp": 65,
               "subtasks": [
@@ -364,9 +364,9 @@
               "id": "tk_m01_008",
               "title": "Framework 2 — a B2B SaaS workflow tool (Linear or Asana)",
               "description": "",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 3,
-              "actualHours": 3.2,
+              "actualHours": 0,
               "difficulty": 3,
               "xp": 65,
               "subtasks": [
@@ -404,7 +404,7 @@
               "id": "tk_m01_009",
               "title": "Framework 3 — a marketplace (Airbnb or Uber Eats)",
               "description": "",
-              "status": "in-progress",
+              "status": "not-started",
               "estimatedHours": 3,
               "actualHours": 1.7,
               "difficulty": 4,
@@ -413,7 +413,7 @@
                 {
                   "id": "tk_m01_009_s1",
                   "title": "Balance supply and demand metrics",
-                  "done": true
+                  "done": false
                 },
                 {
                   "id": "tk_m01_009_s2",
@@ -525,15 +525,15 @@
           "title": "Set the operating system up",
           "summary": "Put the habits and instrumentation in place before the hard months arrive.",
           "rationale": "The audit's biggest listed mistake is measuring progress by effort instead of observable results. This mission makes results observable from day one.",
-          "status": "in-progress",
+          "status": "not-started",
           "tasks": [
             {
               "id": "tk_m01_012",
               "title": "Define your weekly operating cadence",
               "description": "",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 2,
-              "actualHours": 2.1,
+              "actualHours": 0,
               "difficulty": 1,
               "xp": 30,
               "subtasks": [
@@ -566,9 +566,9 @@
               "id": "tk_m01_013",
               "title": "Quantify three outcomes from your current role",
               "description": "The audit's first instruction if it were responsible for getting you hired. Do it now while the details are fresh, not in month 12.",
-              "status": "done",
+              "status": "not-started",
               "estimatedHours": 5,
-              "actualHours": 5.3,
+              "actualHours": 0,
               "difficulty": 4,
               "xp": 100,
               "subtasks": [
@@ -606,7 +606,7 @@
               "id": "tk_m01_014",
               "title": "Stand up the portfolio site shell",
               "description": "",
-              "status": "in-progress",
+              "status": "not-started",
               "estimatedHours": 4,
               "actualHours": 2.2,
               "difficulty": 2,
@@ -615,7 +615,7 @@
                 {
                   "id": "tk_m01_014_s1",
                   "title": "Domain and hosting",
-                  "done": true
+                  "done": false
                 },
                 {
                   "id": "tk_m01_014_s2",

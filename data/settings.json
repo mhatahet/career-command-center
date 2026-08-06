@@ -1,12 +1,12 @@
 {
-  "theme": "dark",
+  "theme": "light",
   "accent": "indigo",
   "sidebarCollapsed": false,
   "density": "comfortable",
   "autoSave": true,
   "showCelebrations": true,
   "reduceMotion": false,
-  "weekStartsOn": 1,
+  "weekStartsOn": 0,
   "hiddenSections": [],
   "dashboardLayout": [
     "readiness",

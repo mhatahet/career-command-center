@@ -3,6 +3,14 @@ dist/
 *.local
 .DS_Store
 .vite/
+tsconfig.tsbuildinfo
+
+# Supabase credentials. .env.example documents the shape; real values never
+# get committed. VITE_-prefixed vars are bundled into the client build and are
+# fine to lose here too — the service-role key must NEVER end up in git.
+.env
+.env.local
+.vercel/
 
 # This project uses npm; package-lock.json is the authoritative lockfile.
 # Something in the local toolchain also emits a yarn.lock — two lockfiles drift,

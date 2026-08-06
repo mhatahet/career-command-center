@@ -27,11 +27,13 @@ import {
   Toggle,
   Tooltip,
 } from '../components/ui'
+import { signOut } from '../lib/auth'
 import { formatDate } from '../lib/dates'
 import { NAV } from '../lib/nav'
 import { isFsApiSupported } from '../lib/persistence'
 import { useScrollToAnchor, useRoute } from '../lib/router'
 import { useStore } from '../lib/store'
+import { isSupabaseConfigured } from '../lib/supabaseClient'
 import { DATA_FILES } from '../lib/types'
 
 const ACCENTS = ['indigo', 'violet', 'cyan', 'emerald', 'amber', 'rose', 'blue'] as const
@@ -134,10 +136,16 @@ export function Settings() {
         <CardHeader
           title="Data storage"
           subtitle={adapter.label}
-          help="This app has no server and no database. Your data is eighteen JSON files in the project's data folder, and this section shows exactly how the app is reaching them."
+          help="Locally this app reads and writes the JSON files in the project's data folder directly; deployed, it reads and writes a Supabase Postgres database instead. This section shows exactly how the app is reaching your data right now."
           actions={
             <Badge tone={adapter.writesToDisk ? 'success' : 'warning'} size="lg" dot>
-              {adapter.kind === 'bridge' ? 'Dev bridge' : adapter.kind === 'fsapi' ? 'Folder connected' : 'Browser only'}
+              {adapter.kind === 'bridge'
+                ? 'Dev bridge'
+                : adapter.kind === 'supabase'
+                  ? 'Supabase'
+                  : adapter.kind === 'fsapi'
+                    ? 'Folder connected'
+                    : 'Browser only'}
             </Badge>
           }
         />
@@ -310,6 +318,29 @@ export function Settings() {
           </div>
         </CardBody>
       </Card>
+
+      {/* =========================================================== account == */}
+      {isSupabaseConfigured() ? (
+        <Card>
+          <CardHeader
+            title="Account"
+            help="This app has no public sign-up. The one account is created from the Supabase dashboard (Authentication → Users → Add user)."
+          />
+          <CardBody>
+            <div className="row row--between row--wrap" style={{ gap: 'var(--space-3)' }}>
+              <span className="text-sm text-secondary">Signed in via Supabase.</span>
+              <Button
+                variant="secondary"
+                size="sm"
+                icon={<Icon name="logout" size={13} />}
+                onClick={() => void signOut()}
+              >
+                Sign out
+              </Button>
+            </div>
+          </CardBody>
+        </Card>
+      ) : null}
 
       {/* ====================================================== appearance == */}
       <Card>

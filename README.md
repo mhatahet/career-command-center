@@ -67,9 +67,11 @@ snapshots sit on the same scale. Change both together.
 
 ## Where your data lives
 
-Eighteen JSON files in [`data/`](data/). No server, no database, no account.
+Locally: eighteen JSON files in [`data/`](data/), no server, no database, no
+account. Deployed: a Supabase Postgres table, behind a login — see
+[`DEPLOY.md`](DEPLOY.md) for setup.
 
-The app reaches them through one of three adapters, tried in order — see
+The app reaches its data through one of four adapters, tried in order — see
 [`src/lib/persistence.ts`](src/lib/persistence.ts):
 
 1. **JSON file bridge** *(what you get with `npm run dev`)*
@@ -79,12 +81,20 @@ The app reaches them through one of three adapters, tried in order — see
    Writes are atomic (temp file + rename), so a crash mid-save cannot truncate a
    good file.
 
-2. **File System Access API** *(for a built, statically-hosted copy)*
+2. **Supabase** *(what a deployed copy uses)*
+   A `data_files` table — one row per collection — reached over `supabase-js`,
+   protected by Row-Level Security and a login screen (see
+   [`src/lib/auth.tsx`](src/lib/auth.tsx)). Only active when
+   `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` are set; otherwise this
+   adapter is skipped entirely and nothing about local dev changes. Full setup
+   in [`DEPLOY.md`](DEPLOY.md).
+
+3. **File System Access API** *(for a built copy with no Supabase configured)*
    Grant access to the `data` folder once from Settings → Data. The handle is kept
    in IndexedDB and writes are automatic from then on. Chromium browsers only.
 
-3. **localStorage** *(always active, as a mirror)*
-   Written to on every save regardless of which adapter is primary. If a disk write
+4. **localStorage** *(always active, as a mirror)*
+   Written to on every save regardless of which adapter is primary. If a write
    fails, the work still survives a reload.
 
 Saves are **per-file and debounced** — editing a task rewrites `roadmap.json` alone,
@@ -182,7 +192,9 @@ the collections you want empty — or edit `PROGRAMME_START` in
 
 ## Stack
 
-React 18 · TypeScript · Vite. Two runtime dependencies — `react` and `react-dom`.
+React 18 · TypeScript · Vite. Three runtime dependencies — `react`, `react-dom`,
+and `@supabase/supabase-js` (only exercised when deployed with Supabase
+configured — see [`DEPLOY.md`](DEPLOY.md)).
 
 Charts are hand-rolled SVG ([`src/components/charts/`](src/components/charts/)): the
 whole set is smaller than a charting library, every mark inherits design tokens so it
@@ -193,13 +205,17 @@ host with no rewrite rules.
 ```
 src/
   lib/         types · persistence · store · derive · dates · router · nav
+               auth.tsx · supabaseClient.ts   (Supabase adapter + login gate)
   components/  ui/ (primitives) · charts/ · layout/ (shell, palette, toasts)
   pages/       one file per section
   styles/      tokens.css · global.css
 tooling/
-  json-file-bridge.ts   dev-server file bridge
-  seed/                 the data generator
-data/                   your 18 JSON files
+  json-file-bridge.ts       dev-server file bridge
+  migrate-to-supabase.mjs   one-time data/*.json -> Supabase push
+  seed/                     the data generator
+data/                       your 18 JSON files (local dev's source of truth)
+supabase/schema.sql          table + RLS policies for a deployed copy
+DEPLOY.md                    Supabase + Vercel setup, step by step
 ```
 
 Design tokens live in [`src/styles/tokens.css`](src/styles/tokens.css). Both themes
@@ -225,5 +241,11 @@ nothing else.
   directional.
 - **Compensation figures are illustrative**, quoted from Part 9 of the audit. Actual
   numbers vary enormously by company, level, equity and market.
-- **No sync.** One machine, one folder. Use backup/restore or put `data/` in git if
-  you want history — the files are pretty-printed specifically so they diff well.
+- **No sync between the file bridge and Supabase.** If you deploy (see
+  [`DEPLOY.md`](DEPLOY.md)), `npm run dev` and the deployed copy become two
+  independent data stores — editing one does not update the other. Pick one as
+  primary; `npm run migrate:supabase` is a one-way, one-shot push from
+  `data/*.json` into Supabase, not a live sync.
+- **Without Supabase configured, still no sync** — one machine, one folder.
+  Use backup/restore or put `data/` in git if you want history — the files are
+  pretty-printed specifically so they diff well.
